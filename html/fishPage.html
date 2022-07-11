@@ -5,19 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="../js/javascript.js"></script>
+    <script type="module" src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/64X64.ico" type="image/x-icon">
 </head>
 <body>
     <!--header-->
     <header>
         <!--content-->
-        <div class="content">
+        <div class="content inner">
             <i class="back_arrow" onclick="window.location.href='./index_inner.html'"></i>
             <div class="title">捕魚機</div>
         </div>
@@ -32,15 +28,15 @@
                 <div class="listBox">
                     <ul>
                         <li class="active">
-                            <i class="all_ic"></i>
+                            <i class="list_ic all"></i>
                             全部
                         </li>
                         <li>
-                            <i class="hot_ic"></i>
+                            <i class="list_ic hot"></i>
                             熱門遊戲
                         </li>
                         <li>
-                            <i class="love_ic"></i>
+                            <i class="list_ic love"></i>
                             我的最愛
                         </li>
                     </ul>
@@ -57,10 +53,10 @@
                     <img src="../images/partner/fish/fish_1.png">
                     <p>
                         <span>哥斯捕魚</span>
-                        <button class="love"></button>
+                        <button class="love_ic"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter" onclick="callFish()">進入遊戲</button>
+                        <button class="enter callFish">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -68,10 +64,10 @@
                     <img src="../images/partner/fish/fish_2.png">
                     <p>
                         <span>財神捕魚王</span>
-                        <button class="love"></button>
+                        <button class="love_ic"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter" onclick="callFish()">進入遊戲</button>
+                        <button class="enter callFish">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -79,10 +75,10 @@
                     <img src="../images/partner/fish/fish_3.png">
                     <p>
                         <span>金龍神360</span>
-                        <button class="love"></button>
+                        <button class="love_ic"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter" onclick="callFish()">進入遊戲</button>
+                        <button class="enter callFish">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -90,10 +86,10 @@
                     <img src="../images/partner/fish/fish_4.png">
                     <p>
                         <span>金多多捕魚360</span>
-                        <button class="love"></button>
+                        <button class="love_ic"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter" onclick="callFish()">進入遊戲</button>
+                        <button class="enter callFish">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -101,10 +97,10 @@
                     <img src="../images/partner/fish/fish_5.png">
                     <p>
                         <span>海王捕魚3 橫版</span>
-                        <button class="love"></button>
+                        <button class="love_ic"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter" onclick="callFish()">進入遊戲</button>
+                        <button class="enter callFish">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -138,7 +134,7 @@
     </footer>
     <!--彈窗-->
     <div class="filter">
-        <!--捕魚機彈窗-->
+        <!--棋牌彈窗-->
         <div class="jumpWindow gameWindow fish">
             <div class="title">
                 <p>捕魚機</p>
@@ -153,26 +149,30 @@
                     <p class="smallTitle">轉帳金額</p>
                     <input type="text">
                 </div>
-                <div class="row btnBox">
-                    <button type="button">$100</button>
-                    <button type="button">$500</button>
-                    <button type="button">$1000</button>
-                    <button type="button">$3000</button>
-                    <button type="button">$5000</button>
-                    <button type="button">$10000</button>
-                    <button type="button">全部</button>
+                <div class="row">
+                    <p class="smallTitle">&ensp;</p>
+                    <div class="btnBox">
+                        <button type="button">$100</button>
+                        <button type="button">$500</button>
+                        <button type="button">$1000</button>
+                        <button type="button">$3000</button>
+                        <button type="button">$5000</button>
+                        <button type="button">$10000</button>
+                        <button type="button">全部</button>
+                    </div>
                 </div>
                 <div class="row checkBtn">
-                    <button>確認</button>
+                    <button type="button">確認</button>
                 </div>
                 <div class="row">
-                    <p class="smallTitle">鳳凰棋牌</p>
+                    <p class="smallTitle">哥斯捕魚</p>
                     <div class="moneyText">$0</div>
                 </div>
             </form>
-            <hr>
             <button class="enterBtn">進入遊戲</button>
         </div>
     </div>
+    <!--背景-->
+    <div class="bg"></div>
 </body>
 </html>

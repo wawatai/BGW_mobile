@@ -2,287 +2,223 @@
 .topList {
     width: 100%;
     height: auto;
-    background: $mainBG_1;
 
     ul {
         width: 100%;
         height: auto;
-        display: flex;
+        @include chooseStyle_1;
 
         li {
             width: 50%;
             height: 40px;
-            box-sizing: border-box;
-            border-bottom: solid 2px transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            font-weight: bold;
-            color: $choose_Word;
-
-            &.active {
-                color: $choose_ActiveWord;
-                border-color: $choose_Border;
-            }
         }
     }
 }
 
 //內容
 .mailBody {
+    display: none;
 
-    &.normal {
-        display: none;
+    &.display {
+        display: block;
+    }
 
-        &.display {
-            display: block;
+    &.post {
+
+        .mailBox {
+
+            .title {
+                margin: 0;
+            }
         }
+    }
 
-        //中選項
-        .subClass {
-            width: 100%;
-            height: auto;
-            box-sizing: border-box;
-            padding: 10px 15px;
-            background: $mainBG_2;
+    //中選項
+    .subClass {
+        width: 100%;
+        height: auto;
+        padding: 12px 16px;
+
+        &.third {
 
             ul {
-                width: 100%;
-                height: auto;
-                display: flex;
 
                 li {
-                    width: 50%;
-                    height: 10.67vw;
-                    @include bigGrayBtn;
 
-                    &:nth-of-type(1){
-                        border-radius: 5px 0 0 5px;
-                    }
-
-                    &:last-child {
-                        border-radius: 0 5px 5px 0;
+                    &:nth-of-type(2) {
+                        border-radius: 0;
                     }
                 }
             }
         }
 
-        //編輯
-        .editBox {
+        ul {
             width: 100%;
             height: auto;
-            padding: 16px;
-            box-sizing: border-box;
-            justify-content: space-between;
-            display: none;
+            display: flex;
 
-            &.display {
-                display: flex;
-            }
-
-            .all {
+            li {
+                width: 50%;
+                height: 10.67vw;
+                @include secondBtn;
                 display: flex;
                 align-items: center;
-                color: $title_2;
-                font-size: 16px;
-                font-weight: bold;
+                justify-content: center;
 
-                input {
-                    margin-right: 10px;
-                    @include checkBox;
-                }
-            }
-
-            .modify {
-
-                button {
-                    width: 82px;
-                    height: 28px;
-                    @include noBgBtn_Color1;
-                    font-size: 12px;
-
-                    &.delete {
-                        @include noBgBtn_Color2;
-                        font-size: 12px;
-                        margin-left: 10px;
-                    }
-                }
-            }
-        }
-
-        //內容
-        .mailBox {
-            width: 100%;
-            height: calc(100vh - 200px);
-            overflow-y: auto;
-
-            &.editing {
-                height: calc(100vh - 260px);
-
-                .title,.textBox {
-                    padding: 0 30px 0 50px;
+                &:nth-of-type(1){
+                    border-radius: 5px 0 0 5px;
+                    border-right: none;
                 }
 
-                .inputBox {
-                    display: flex;
-                }
-            }
-            
-            &.system,&.personal {
-                display: none;
-
-                &.display {
-                    display: block;
-                }
-            }
-
-            ul {
-                width: 100%;
-                height: auto;
-                box-sizing: border-box;
-                padding: 15px 4%;
-
-                li {
-                    width: 100%;
-                    height: 108px;
-                    margin-bottom: 10px;
-                    @include mailWrap;
-
-                    .title {
-                        width: 100%;
-                        height: 40%;
-                        box-sizing: border-box;
-                        padding: 0 30px;
-                        display: flex;
-                        align-items: flex-end;
-                        font-size: 16px;
-                        font-weight: bold;
-                        color: $title_2;
-                    }
-
-                    .textBox {
-                        width: 100%;
-                        height: 60%;
-                        display: flex;
-                        box-sizing: border-box;
-                        padding: 0 30px;
-                        align-items: center;
-                        position: relative;
-
-                        p {
-                            width: 100%;
-                            height: auto;
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            color: $mainWord_1;
-                            font-size: 14px;
-                            font-weight: bold;
-                        }
-
-                        .date {
-                            position: absolute;
-                            top: 0;
-                            right: 30px;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: $title_Time;
-                        }
-                    }
-
-                    .inputBox {
-                        display: none;
-                        width: 50px;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        align-items: center;
-                        justify-content: center;
-
-                        input {
-                            @include checkBox;
-                        }
-                    }
+                &:last-child {
+                    border-radius: 0 5px 5px 0;
+                    border-left: none;
                 }
             }
         }
     }
 
-    &.post {
+    //編輯
+    .editBox {
+        width: 100%;
+        height: auto;
+        padding: 16px 16px 28px;
+        justify-content: space-between;
+        display: none;
+
+        &.display {
+            display: flex;
+        }
+
+        .all {
+            color: $mainWord_1;
+            font-size: 4vw;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+
+            input {
+                margin-right: 10px;
+                @include checkBox;
+            }
+        }
+
+        .modify {
+
+            button {
+                width: 80px;
+                height: 28px;
+                @include mainBtn;
+                font-size: 3.4vw;
+
+                &.delete {
+                    @include secondBtn;
+                    font-size: 3.4vw;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    //內容
+    .mailBox {
+        @include bgStyle_1;
+        height: calc(100vh - 211px);
         display: none;
 
         &.display {
             display: block;
         }
 
-        //中選項
-        .subClass {
-            width: 100%;
-            height: auto;
-            box-sizing: border-box;
-            padding: 10px 15px;
-            background: $mainBG_2;
+        &.editing {
+            height: calc(100vh - 283px);
 
             ul {
-                width: 100%;
-                height: auto;
-                display: flex;
 
                 li {
-                    width: 34%;
-                    height: 10.67vw;
-                    @include bigGrayBtn;
-                    
-                    &:nth-of-type(1) {
-                        border-radius: 5px 0 0 5px;
-                    }
-
-                    &:last-child {
-                        border-radius: 0 5px 5px 0;
+                    padding-left: 50px;
+                
+                    .inputBox {
+                        display: flex;
                     }
                 }
+
             }
         }
 
-        //內容
-        .mailBox {
+        ul {
             width: 100%;
-            height: calc(100vh - 200px);
-            overflow-y: auto;
+            height: auto;
 
-            &.hot,&.nor,&.dep {
-                display: none;
-
-                &.display {
-                    display: block;
-                }
-            }
-
-            ul {
-                width: 100%;
+            li {
+                width: 92vw;
                 height: auto;
-                box-sizing: border-box;
-                padding: 15px 4%;
+                @include secondBtn;
+                position: relative;
+                padding: 16px 24px;
+                margin: 0 auto 8px;
 
-                li {
+                &:active,&.active {
+                    
+                    .title,
+                    .textBox p,
+                    .textBox .date {
+                        color: $secondBtn_Word;
+                    }
+                }
+
+                &.read {
+                    @include bgStyle_2;
+
+                    .title,
+                    .textBox p {
+                        color: $mainWord_2;
+                    }
+                }
+
+                .title {
                     width: 100%;
-                    height: auto;
-                    margin-bottom: 10px;
-                    @include mailWrap;
+                    color: $title_1;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 32px;
+                }
+
+                .textBox {
+                    width: 100%;
+                    position: relative;
 
                     p {
                         width: 100%;
                         height: auto;
-                        box-sizing: border-box;
-                        padding: 30px;
-                        font-size: 16px;
+                        color: $mainWord_1;
+                        font-size: 14px;
                         font-weight: bold;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        color: $title_2;
+                        @include wordHidden;
+                    }
+
+                    .date {
+                        position: absolute;
+                        top: -5vw;
+                        right: 10px;
+                        color: $mainWord_2;
+                        font-size: 2vw;
+                        font-weight: bold;
+                    }
+                }
+
+                .inputBox {
+                    display: none;
+                    width: 50px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    align-items: center;
+                    justify-content: center;
+
+                    input {
+                        @include checkBox;
                     }
                 }
             }
@@ -292,17 +228,14 @@
 
 //內文
 .mailContent {
-    width: 90%;
-    height: calc(100vh - 125px);
-    overflow-y: auto;
-    box-sizing: border-box;
-    padding: 10vw 15px;
+    width: 92vw;
+    height: calc(100vh - 137px);
+    @include bgStyle_2;
     border-radius: 10px;
-    margin: 15px auto;
-    box-shadow: 0 2px 4px 0 $boxshadow_1;
     position: relative;
-    background: $mainBG_1;
-    border: solid 1px $mainBorder_2;
+    overflow-y: auto;
+    padding: 64px 32px 16px;
+    margin: 15px auto;
 
     &::before {
         content: "";
@@ -311,21 +244,13 @@
         left: 0;
         width: 100%;
         height: 8vw;
-        border-radius: 10px 10px 0 0;
-        background: $mailCnt_TopBG;
+        @include titleBG_1;
     }
 
-    .title {
-        margin: 20px 0;
-        font-size: 17px;
-        font-weight: bold;
-        color: $title_2;
-    }
-
-    .msg {
-        line-height: 20px;
-        font-size: 14px;
-        font-weight: bold;
+    p {
         color: $mainWord_1;
+        font-size: 3.4vw;
+        font-weight: bold;
+        line-height: 5vw;
     }
 }

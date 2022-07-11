@@ -113,25 +113,7 @@
                 }
             }
 
-            // .btnBox {
-            //     width: 100%;
-            //     height: auto;
-            //     display: flex;
-            //     justify-content: space-between;
-            //     margin-top: 6.66vw;
 
-            //     button {
-            //         width: 43.2vw;
-            //         height: 42px;
-            //         @include mainBtn;
-            //         font-size: 3.7vw;
-
-            //         &.check {
-            //             @include noBgBtn_Normal
-            //             font-size: 3.7vw;
-            //         }
-            //     }
-            // }
         }
 
         .levelBox {
@@ -320,7 +302,7 @@
     .checkBtn {
         width: 92%;
         height: 50px;
-        @include longBtn;
+        
         padding: 0 20px;
         margin: 0 auto 10px;
 
