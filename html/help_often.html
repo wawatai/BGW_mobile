@@ -5,28 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="../js/javascript.js"></script>
+    <script type="module" src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/64X64.ico" type="image/x-icon">
 </head>
 <body>
     <!--header-->
     <header>
         <!--content-->
-        <div class="content helpPage display">
+        <div class="content inner helpPage display">
             <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
             <div class="title">常見問題</div>
         </div>
-        <div class="content helpPage q1">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">常見問題</div>
         </div>
-        <div class="content helpPage q2">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">遠端協助</div>
         </div>
     </header>
@@ -37,7 +33,10 @@
             <!--開頭選單-->
             <div class="helpHeader">
                 <div class="selectBox">
-                    <p>常見問題</p>
+                    <p>
+                        <i class="topList_ic often"></i>
+                        常見問題
+                    </p>
                     <i class="arrow_ic"></i>
                     <select onchange="window.location.href=this.options[this.selectedIndex].value">
                         <option value="" disabled>請選擇</option>
@@ -51,9 +50,14 @@
             <!--內容-->
             <div class="helpBody">
                 <ul>
-                    <li>常見問題</li>
-                    <li>遠端協助</li>
-                    <li onclick="window.location.href='./help_often_contact.html'">聯絡我們</li>
+                    <li>
+                        <i class="list_ic often q1"></i>
+                        常見問題
+                    </li>
+                    <li>
+                        <i class="list_ic often q2"></i>
+                        遠端協助
+                    </li>
                 </ul>
             </div>
         </div>
@@ -62,8 +66,10 @@
             <ul class="q1">
                 <li>
                     <div class="title">
-                        <i class="icon often"></i>
-                        <p>如何註冊帳號</p>
+                        <p>
+                            <i class="list_ic often q1"></i>
+                            如何註冊帳號?
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -72,8 +78,10 @@
                 </li>
                 <li>
                     <div class="title">
-                        <i class="icon often"></i>
-                        <p>我該如何存款?</p>
+                        <p>
+                            <i class="list_ic often q1"></i>
+                            我該如何存款?
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -87,8 +95,10 @@
                 </li>
                 <li>
                     <div class="title">
-                        <i class="icon often"></i>
-                        <p>我的個人資料安全嗎?</p>
+                        <p>
+                            <i class="list_ic often q1"></i>
+                            我的個人資料安全嗎?
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -97,8 +107,10 @@
                 </li>
                 <li>
                     <div class="title">
-                        <i class="icon often"></i>
-                        <p>太久沒登入忘記密碼了怎麼辦?</p>
+                        <p>
+                            <i class="list_ic often q1"></i>
+                            太久沒登入忘記密碼了怎麼辦?
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -107,8 +119,10 @@
                 </li>
                 <li>
                     <div class="title">
-                        <i class="icon often"></i>
-                        <p>通博(tb588)娛樂城支援幾種貨幣呢?</p>
+                        <p>
+                            <i class="list_ic often q1"></i>
+                            通博(tb588)娛樂城支援幾種貨幣呢?
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -117,8 +131,10 @@
                 </li>
                 <li>
                     <div class="title">
-                        <i class="icon often"></i>
-                        <p>通博(tb588)娛樂城最低投注額是多少?</p>
+                        <p>
+                            <i class="list_ic often q1"></i>
+                            通博(tb588)娛樂城最低投注額是多少?
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -127,8 +143,10 @@
                 </li>
                 <li>
                     <div class="title">
-                        <i class="icon often"></i>
-                        <p>加投注後進行派彩需要多久?</p>
+                        <p>
+                            <i class="list_ic often q1"></i>
+                            加投注後進行派彩需要多久?
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -137,8 +155,10 @@
                 </li>
                 <li>
                     <div class="title">
-                        <i class="icon often"></i>
-                        <p>申請點數出售交易需要多久完成?</p>
+                        <p>
+                            <i class="list_ic often q1"></i>
+                            申請點數出售交易需要多久完成?
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -149,12 +169,14 @@
             <ul class="q2">
                 <li class="active">
                     <div class="title">
-                        <i class="icon often"></i>
-                        <p>遠端協助</p>
+                        <p>
+                            <i class="list_ic often q2"></i>
+                            遠端協助
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
-                        <p>步驟一 : 前往<a href="#">Team-Viewer</a> 官網,下載遠端協助網址。</p>
+                        <p>步驟一 : 前往 <a href="#">Team-Viewer</a> 官網,下載遠端協助網址。</p>
                         <p>下載後並執行</p>
                         <div class="img tv"></div>
                         <p>步驟二 : 進行安裝，安裝教學流程可參照,遠端協助程式安裝教學。</p>
@@ -173,23 +195,23 @@
     <footer>
         <ul>
             <li onclick="window.location.href='./index_inner.html'">
-                <i class="menu_ic"></i>
+                <i class="list_ic menu"></i>
                 <p>首頁</p>
             </li>
             <li onclick="window.location.href='./event.html'">
-                <i class="event_ic"></i>
+                <i class="list_ic event"></i>
                 <p>優惠</p>
             </li>
             <li onclick="window.location.href='./wallet.html'">
-                <i class="wallet_ic"></i>
+                <i class="list_ic wallet"></i>
                 <p>存轉提</p>
             </li>
-            <li class="active" onclick="window.location.href='./help_often_contact.html'">
-                <i class="service_ic"></i>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="list_ic service"></i>
                 <p>客服</p>
             </li>
-            <li onclick="window.location.href='./member.html'">
-                <i class="center_ic"></i>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="list_ic center"></i>
                 <p>會員中心</p>
             </li>
         </ul>

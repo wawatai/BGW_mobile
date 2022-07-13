@@ -30,12 +30,12 @@ $(function(){
         $(".homeCenter .gameBox.slot li")
         .removeClass()
         .attr("onClick","window.location.href='./html/slotPage.html'");
-        $(".homeCenter .gameBox.fish li")
-        .removeClass()
-        .attr("onClick","window.location.href='./html/fishPage.html'");
-        $(".homeCenter .gameBox.board li")
-        .removeClass()
-        .attr("onClick","window.location.href='./html/boardPage.html'");
+        // $(".homeCenter .gameBox.fish li")
+        // .removeClass()
+        // .attr("onClick","window.location.href='./html/fishPage.html'");
+        // $(".homeCenter .gameBox.board li")
+        // .removeClass()
+        // .attr("onClick","window.location.href='./html/boardPage.html'");
 
         //operate選單轉頁面連結
         $(".memberArea .operate button:eq(0)")
@@ -288,7 +288,38 @@ $(function(){
     })
     $(".depContent.card .check").on("click",function(){
         $(".depContent.already")
-        .addClass()
+        .addClass("display")
         .siblings().removeClass("display");
+    })
+
+    //help切換
+    $(".helpBody li").on("click",function(){
+        var n = $(this).index();
+
+        $("header .helpPage:eq("+ (n + 1) +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+
+        $(".helpWrap")
+        .removeClass("display")
+
+        $(".helpInner,.helpInner ul:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+    $("header .helpPage .back_arrow").on("click",function(){
+        $(".helpInner")
+        .removeClass("display");
+
+        $(".helpWrap")
+        .addClass("display");
+
+        $("header .helpPage:first-child")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+    $(".helpInner li .title").on("click",function(){
+        $(this).closest("li")
+        .toggleClass("active");
     })
 })

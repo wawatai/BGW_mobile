@@ -1,9 +1,8 @@
 //幫助中心外層
 .helpWrap {
-    display: none;
     width: 100%;
-    height: auto;
-    background: $mainBG_2;
+    height: calc(100vh - 105px);
+    display: none;
 
     &.display {
         display: block;
@@ -13,38 +12,49 @@
     .helpHeader {
         width: 100%;
         height: 70px;
+        border-bottom: solid 1px $mainBorder_2; 
         display: flex;
         align-items: center;
         justify-content: center;
-        border-bottom: solid 1px $mainBorder_1;
 
         .selectBox {
-            width: 92.27vw;
+            width: 92vw;
             height: 42px;
+            @include mainBtn;
             display: flex;
             align-items: center;
-            justify-content: center;
-            background: $mainBG_1;
-            box-shadow: 0 0 13px 2px $boxshadow_1;
+            justify-content: space-between;
             position: relative;
-            border-radius: 5px;
-            border: solid 1px $mainBorder_2;
 
             p {
-                color: $title_1;
-                font-size: 14px;
-                font-weight: bold;
+                font-size: 3.7vw;
+                display: flex;
+                align-items: center;
+
+                i {
+                    width: 6vw;
+                    height: 5.5vw;
+                    margin-right: 10px;
+
+                    &.about {
+                        background-position-x: 0;
+                    }
+                    &.often {
+                        background-position-x: 50%;
+                    }
+                    &.new {
+                        background-position-x: 100%;
+                    }
+                }
             }
 
             .arrow_ic {
-                display: block;
                 width: 2vw;
                 height: 3.4vw;
+                background-position-y: 100%;
                 position: absolute;
-                top: 50%;
-                transform: translateY(-50%) rotate(270deg);
+                transform: rotate(270deg);
                 right: 4vw;
-                transition: 0.3s all;
             }
 
             select {
@@ -58,36 +68,110 @@
                 color: $mainWord_1;
                 font-weight: bold;
                 font-size: 14px;
+                
+                option {
+                    background: $mainBG_1;
+                }
             }
         }
     }
 
     //內容
     .helpBody {
-        width: 100%;
-        height: calc(100vh - 164px);
-        overflow-y: auto;
+        @include bgStyle_1;
+        height: calc(100vh - 175px);
 
         ul {
             width: 100%;
             height: auto;
-            box-sizing: border-box;
-            padding: 15px 4vw;
+            padding: 16px;
 
             li {
                 width: 100%;
-                height: 52px;
+                height: 42px;
+                @include secondBtn;
+                font-size: 3.7vw;
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                background: $mainBG_1;
-                border-radius: 5px;
-                box-shadow: 0 0 5px 0 $boxshadow_2;
-                margin-bottom: 15px;
-                font-size: 14px;
-                font-weight: bold;
-                color: $title_2;
-                border: solid 1px $mainBorder_2;
+                margin-bottom: 10px;
+
+                &:active,&.active {
+
+                    i {
+                        background-position-y: 100%;
+                    }
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                i {
+                    margin-right: 10px;
+
+                    &.about {
+                        width: 5.8vw;
+                        height: 6vw;
+
+                        &.q1 {
+                            background-position-x: 0;
+                        }
+                        &.q2 {
+                            background-position-x: 12.5%;
+                        }
+                        &.q3 {
+                            background-position-x: 25%;
+                        }
+                        &.q4 {
+                            background-position-x: 37.5%;
+                        }
+                        &.q5 {
+                            background-position-x: 50%;
+                        }
+                        &.q6 {
+                            background-position-x: 62.5%;
+                        }
+                        &.q7 {
+                            background-position-x: 75%;
+                        }
+                        &.q8 {
+                            background-position-x: 87.5%;
+                        }
+                    }
+
+                    &.new {
+                        width: 6vw;
+                        height: 6vw;
+
+                        &.q1 {
+                            background-position-x: 0;
+                        }
+                        &.q2 {
+                            background-position-x: 25%;
+                        }
+                        &.q3 {
+                            background-position-x: 50%;
+                        }
+                        &.q4 {
+                            background-position-x: 75%;
+                        }
+                        &.q5 {
+                            background-position-x: 100%;
+                        }
+                    }
+
+                    &.often {
+                        width: 6vw;
+                        height: 6vw;
+
+                        &.q1 {
+                            background-position-x: 0;
+                        }
+                        &.q2 {
+                            background-position-x: 100%;
+                        }
+                    }
+                }
             }
         }
     }
@@ -95,10 +179,8 @@
 
 //幫助中心內層
 .helpInner {
+    @include bgStyle_1;
     display: none;
-    width: 100%;
-    height: calc(100vh - 94px);
-    overflow-y: auto;
 
     &.display {
         display: block;
@@ -116,7 +198,7 @@
         li {
             width: 100%;
             height: auto;
-            margin: 14px 0;
+            margin: 10px 0;
 
             &.active {
 
@@ -133,54 +215,112 @@
             }
 
             .title {
-                width: 92.27vw;
-                height: 52px;
-                background: $mainBG_1;
-                box-shadow: 0 0 5px 0 $boxshadow_2;
+                width: 92vw;
+                height: 42px;
+                @include titleBG_1;
+                border: solid 1px $mainBorder_1;
                 border-radius: 5px;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
                 margin: 0 auto;
-                border: solid 1px $mainBorder_2;
-
-                .icon {
-                    display: block;
-                    width: 15px;
-                    height: 15px;
-                    margin: 0 4vw;
-                    flex-shrink: 0;
-                }
+                padding: 0 10px;
+                position: relative;
+                z-index: 1;
 
                 .arrow_ic {
-                    display: block;
                     width: 2vw;
                     height: 3.4vw;
-                    margin: 0 4vw;
-                    flex-shrink: 0;
                     transform: rotate(180deg);
                     transition: 0.3s all;
                 }
 
                 p {
-                    width: 100%;
-                    font-size: 14px;
+                    color: $mainWord_1;
+                    font-size: 3.7vw;
                     font-weight: bold;
-                    color: $title_1;
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        margin-right: 10px;
+    
+                        &.about {
+                            width: 5.8vw;
+                            height: 6vw;
+    
+                            &.q1 {
+                                background-position-x: 0;
+                            }
+                            &.q2 {
+                                background-position-x: 12.5%;
+                            }
+                            &.q3 {
+                                background-position-x: 25%;
+                            }
+                            &.q4 {
+                                background-position-x: 37.5%;
+                            }
+                            &.q5 {
+                                background-position-x: 50%;
+                            }
+                            &.q6 {
+                                background-position-x: 62.5%;
+                            }
+                            &.q7 {
+                                background-position-x: 75%;
+                            }
+                            &.q8 {
+                                background-position-x: 87.5%;
+                            }
+                        }
+    
+                        &.new {
+                            width: 6vw;
+                            height: 6vw;
+    
+                            &.q1 {
+                                background-position-x: 0;
+                            }
+                            &.q2 {
+                                background-position-x: 25%;
+                            }
+                            &.q3 {
+                                background-position-x: 50%;
+                            }
+                            &.q4 {
+                                background-position-x: 75%;
+                            }
+                            &.q5 {
+                                background-position-x: 100%;
+                            }
+                        }
+    
+                        &.often {
+                            width: 6vw;
+                            height: 6vw;
+    
+                            &.q1 {
+                                background-position-x: 0;
+                            }
+                            &.q2 {
+                                background-position-x: 100%;
+                            }
+                        }
+                    }
                 }
             }
 
             .textBox {
                 display: none;
-                width: 92.27vw;
+                width: 92vw;
                 height: auto;
-                box-sizing: border-box;
-                padding: 10px;
-                margin: 0 auto;
-                border: solid 1px $mainBorder_2;
+                border: solid 1px $mainBorder_1;
                 border-top: none;
                 background: $mainBG_1;
                 border-radius: 0 0 5px 5px;
+                padding: 16px;
+                margin: -2px auto 0;
 
                 &.app {
                     background: none;
@@ -188,26 +328,29 @@
                 }
 
                 p {
-                    line-height: 22px;
-                    font-size: 14px;
+                    color: $mainWord_1;
+                    line-height: 4vw;
+                    font-size: 3.4vw;
                     font-weight: bold;
-                    color: $help_Word;
                     margin-bottom: 8px;
 
-                    &.smallTitle {
-                        font-size: 22px;
-                        margin: 20px 0 10px;
-                        color: $help_Title;
-                        text-align: center;
+                    &:last-child {
+                        margin: 0;
+                    }
 
-                        &.first {
+                    &.smallTitle {
+                        color: $title_1;
+                        font-size: 5vw;
+                        margin: 20px 0 10px;
+
+                        &:first-child {
                             margin-top: 0;
                         }
                     }
 
                     &.platform {
-                        font-size: 18px;
-                        color: $help_Title;
+                        color: $money;
+                        font-size: 4vw;
                         margin: 15px 0;
                         text-align: center;
 
@@ -232,48 +375,11 @@
                     &.transferWay {
                         padding-top: 111%;
                     }
-
                     &.remote {
                         padding-top: 137%;
                     }
-
                     &.license {
                         padding-top: 134%;
-                    }
-                }
-
-                .btnBox {
-                    width: 100%;
-                    height: auto;
-                    margin-top: 20px;
-
-                    div {
-                        width: 100%;
-                        height: 105px;
-                        position: relative;
-                        margin-bottom: 15px;
-                        @include help_lineBtn;
-
-                        i {
-                            display: block;
-                            position: absolute;
-                            width: 8.7vw;
-                            height: 8.7vw;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            left: 5.5vw;
-                            
-                        }
-
-                        p {
-                            font-size: 3.4vw;
-                            font-weight: bold;
-                            margin: 0;
-
-                            &:nth-of-type(1) {
-                                font-size: 5vw;
-                            }
-                        }
                     }
                 }
 

@@ -40,9 +40,6 @@ $click: #ffffff;
 $remind: #ff2e2e;
 $remind_Sp: #38ff2e;
 
-
-$title_2: #4d4d4d;
-
 //選擇列字色+選擇列active
 @mixin chooseStyle_1 {
     display: flex;
@@ -79,10 +76,6 @@ $title_2: #4d4d4d;
         display: block;
     }
 }
-
-//陰影色
-$boxshadow_1: #dedede;
-$boxshadow_2: #c8c8c880;
 
 //彈窗背景透明底
 $filter: #000000b7;
@@ -252,51 +245,7 @@ $card_StatusWord: #d3ae6d;
     }
 }
 
-
-
-
-
-//vip
-$vip_LevelBar: #e0e0e0;
-$vip_LevelCur: #d3b47b;
-$vip_LevelBG: #cccccc;
-$vip_LevelLinear: linear-gradient(to bottom,#f7eeba 0%,#bf9d5f 50%,#eed6af 100%);
-$vip_Word: #ffffff;
-@mixin vipCardText {
-    color: #ffffff;
-    text-shadow: 1px 2px 3px #000000;
-}
-$vipDetail_SecondBG: #f7ede1;
-
-
-
-
-
-
-
-
-//help
-$help_Title: #171717;
-$help_Word: #4d4d4d;
-//客服按鈕
-@mixin help_lineBtn {
-    background: #ffffff;
-    border: solid 1px #00b900;
-    box-shadow: 3px 3px 3px 0 #c5c5c5;
-    display: flex;
-    box-sizing: border-box;
-    padding: 25px 15px 25px 18vw;
-    border-radius: 15px;
-    flex-direction: column;
-    justify-content: space-between;
-
-    p {
-        color: #00b900;
-    }
-}
-
 //slotPage
-$slotGame_Word: #4d4d4d;
 @mixin slotSearch {
     background: #101010;
     border-radius: 30px;
@@ -317,42 +266,11 @@ $slotGame_Word: #4d4d4d;
         color: #848484;
     }
 }
-@mixin slotGameBox {
-    background: linear-gradient(to bottom,#fcfcfc 67%,#d8d8d8 100%);
-    border: solid 1px #b3b3b3;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    font-size: 0;
-    box-sizing: border-box;
-}
-@mixin slotGameBtn_1 {
-    background: linear-gradient(to top, #8c1212 0%, #ff4a4a 100%);
-    border: solid 1px #dc0000;
-    border-radius: 3px;
-    font-size: 3vw;
-    color: #ffffff;
-    font-weight: bold;
 
-    &:active,&.active {
-        background: linear-gradient(to bottom, #8c1212 0%, #ff4a4a 100%);
-    }
-}
-@mixin slotGameBtn_2 {
-    background: linear-gradient(to top, #384c79 0%, #2b87e6 100%);
-    border: solid 1px #0f4eb7;
-    border-radius: 3px;
-    font-size: 3vw;
-    color: #ffffff;
-    font-weight: bold;
-
-    &:active,&.active {
-        background: linear-gradient(to bottom, #384c79 0%, #2b87e6 100%);
-    }
-}
-
-
-
+//vip
+$vip_LevelCur: #d3ae6d;
+$vip_LevelWord: #101010;
+$vip_LevelLinear: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
 
 
 //button

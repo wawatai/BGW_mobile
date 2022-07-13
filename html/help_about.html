@@ -5,52 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="../js/javascript.js"></script>
+    <script type="module" src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/64X64.ico" type="image/x-icon">
 </head>
 <body>
     <!--header-->
     <header>
         <!--content-->
-        <div class="content helpPage display">
+        <div class="content inner helpPage display">
             <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
             <div class="title">關於我們</div>
         </div>
-        <div class="content helpPage q1">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">服務條款</div>
         </div>
-        <div class="content helpPage q2">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">隱私政策</div>
         </div>
-        <div class="content helpPage q3">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">責任博彩</div>
         </div>
-        <div class="content helpPage q4">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">安全性</div>
         </div>
-        <div class="content helpPage q5">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">免責聲明</div>
         </div>
-        <div class="content helpPage q6">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">證照展示</div>
         </div>
-        <div class="content helpPage q7">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">存取款幫助</div>
         </div>
-        <div class="content helpPage q8">
-            <i class="back_arrow" onclick="backToPage()"></i>
+        <div class="content inner helpPage">
+            <i class="back_arrow"></i>
             <div class="title">相關規則</div>
         </div>
     </header>
@@ -61,7 +57,10 @@
             <!--開頭選單-->
             <div class="helpHeader">
                 <div class="selectBox">
-                    <p>關於我們</p>
+                    <p>
+                        <i class="topList_ic about"></i>
+                        關於我們
+                    </p>
                     <i class="arrow_ic"></i>
                     <select onchange="window.location.href=this.options[this.selectedIndex].value">
                         <option value="" disabled>請選擇</option>
@@ -75,14 +74,38 @@
             <!--內容-->
             <div class="helpBody">
                 <ul>
-                    <li>服務條款</li>
-                    <li>隱私政策</li>
-                    <li>責任博彩</li>
-                    <li>安全性</li>
-                    <li>免責聲明</li>
-                    <li>證照展示</li>
-                    <li>存取款幫助</li>
-                    <li>相關規則</li>
+                    <li>
+                        <i class="list_ic about q1"></i>
+                        服務條款
+                    </li>
+                    <li>
+                        <i class="list_ic about q2"></i>
+                        隱私政策
+                    </li>
+                    <li>
+                        <i class="list_ic about q3"></i>
+                        責任博彩
+                    </li>
+                    <li>
+                        <i class="list_ic about q4"></i>
+                        安全性
+                    </li>
+                    <li>
+                        <i class="list_ic about q5"></i>
+                        免責聲明
+                    </li>
+                    <li>
+                        <i class="list_ic about q6"></i>
+                        證照展示
+                    </li>
+                    <li>
+                        <i class="list_ic about q7"></i>
+                        存取款幫助
+                    </li>
+                    <li>
+                        <i class="list_ic about q8"></i>
+                        相關規則
+                    </li>
                 </ul>
             </div>
         </div>
@@ -91,12 +114,14 @@
             <ul class="q1">
                 <li class="active">
                     <div class="title">
-                        <i class="icon about"></i>
-                        <p>服務條款</p>
+                        <p>
+                            <i class="list_ic about q1"></i>
+                            服務條款
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
-                        <p class="smallTitle first">遵守會員規範及法律規定</p>
+                        <p class="smallTitle">遵守會員規範及法律規定</p>
                         <p>您瞭解您註冊成為會員後，即可使用本公司所提供之各項服務(以下稱本服務)。當會員使用本服務時，即表示除了同意遵守本服務條款外，還同意接受本公司對會員規範(包括各項遊戲規則、球賽投注規則、公告及注意事項等)及相關法令規定之拘束，本公司ALLBET所有產品與客戶服務、軟件系統、網絡架構等相關業務事宜，請使用本服務之會員請遵守使用者當地法令之許可，如有違反之情事恕非本服務之負責範圍。</p>
                         <p class="smallTitle">服務簡介</p>
                         <p>1.本公司旨在創造一個『安全可靠』、『即時便利』、『公平公正』、『專業營運』的優質娛樂服務平台，強調的讓會員不受時空的限制，24小時隨時上線就可以參與一個公平公正的遊戲，亦可以享受到與世界各地玩家切磋的樂趣，我們秉持以客為尊的態度，不斷開發創新及了解客戶需求是本公司引以為傲的經營理念，翼望能創造出嶄新的娛樂價值以及達到多方普及的目的，成為具有領導指標性的娛樂網站。</p>
@@ -134,12 +159,14 @@
             <ul class="q2">
                 <li class="active">
                     <div class="title">
-                        <i class="icon about"></i>
-                        <p>隱私政策</p>
+                        <p>
+                            <i class="list_ic about q2"></i>
+                            隱私政策
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
-                        <p class="smallTitle first">隱私政策</p>
+                        <p class="smallTitle">隱私政策</p>
                         <p>1. 我們通博(tb588)致力為客戶保護隱私並提供一個最安全的遊戲平臺，我們在此網站搜集的資料將會為您提供最卓越的服務，我們不會出賣或租賃您的個人資料給第三方，客戶所提供的個人資料均經過SSL128加密技術處理，並儲存在安全的、非公開的作業系統，對於有機會接觸客戶的個人資料的協助夥伴也必需遵守我們訂立的隱私保密規則。</p>
                         <p>2. 您需要保管好您的帳號和密碼安全。不得允許任何其他人或協力廠商，包括任何未成年人使用或重複使用您的帳戶進行任何網站訪問及投注操作。本公司將有權拒絕支付由此產生的任何獎勵或獎金。您將獨自為協力廠商在帳戶中產生的所有損失負責。</p>
                         <p>3. 您可能會收到一些定期的電郵，向您更新有關本公司產品的資訊與服務，當本網推出新穎，好玩和有趣的推廣活動，這些電郵就可幫助您充分享受到本網的服務。</p>
@@ -151,8 +178,10 @@
             <ul class="q3">
                 <li class="active">
                     <div class="title">
-                        <i class="icon about"></i>
-                        <p>責任博彩</p>
+                        <p>
+                            <i class="list_ic about q3"></i>
+                            責任博彩
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -181,8 +210,10 @@
             <ul class="q4">
                 <li class="active">
                     <div class="title">
-                        <i class="icon about"></i>
-                        <p>安全性</p>
+                        <p>
+                            <i class="list_ic about q2"></i>
+                            安全性
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -198,8 +229,10 @@
             <ul class="q5">
                 <li class="active">
                     <div class="title">
-                        <i class="icon about"></i>
-                        <p>免責聲明</p>
+                        <p>
+                            <i class="list_ic about q2"></i>
+                            免責聲明
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -224,8 +257,10 @@
             <ul class="q6">
                 <li class="active">
                     <div class="title">
-                        <i class="icon about"></i>
-                        <p>證照展示</p>
+                        <p>
+                            <i class="list_ic about q2"></i>
+                            證照展示
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -236,8 +271,10 @@
             <ul class="q7">
                 <li class="active">
                     <div class="title">
-                        <i class="icon about"></i>
-                        <p>存取款幫助</p>
+                        <p>
+                            <i class="list_ic about q2"></i>
+                            存取款幫助
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -252,8 +289,10 @@
             <ul class="q8">
                 <li class="active">
                     <div class="title">
-                        <i class="icon about"></i>
-                        <p>相關規則</p>
+                        <p>
+                            <i class="list_ic about q2"></i>
+                            相關規則
+                        </p>
                         <i class="arrow_ic"></i>
                     </div>
                     <div class="textBox">
@@ -319,23 +358,23 @@
     <footer>
         <ul>
             <li onclick="window.location.href='./index_inner.html'">
-                <i class="menu_ic"></i>
+                <i class="list_ic menu"></i>
                 <p>首頁</p>
             </li>
             <li onclick="window.location.href='./event.html'">
-                <i class="event_ic"></i>
+                <i class="list_ic event"></i>
                 <p>優惠</p>
             </li>
             <li onclick="window.location.href='./wallet.html'">
-                <i class="wallet_ic"></i>
+                <i class="list_ic wallet"></i>
                 <p>存轉提</p>
             </li>
-            <li class="active" onclick="window.location.href='./help_often_contact.html'">
-                <i class="service_ic"></i>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="list_ic service"></i>
                 <p>客服</p>
             </li>
-            <li onclick="window.location.href='./member.html'">
-                <i class="center_ic"></i>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="list_ic center"></i>
                 <p>會員中心</p>
             </li>
         </ul>
