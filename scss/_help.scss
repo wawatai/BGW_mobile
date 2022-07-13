@@ -88,11 +88,13 @@
 
             li {
                 width: 100%;
-                height: 42px;
+                height: auto;
                 @include secondBtn;
+                color: $title_1;
                 font-size: 3.7vw;
                 display: flex;
                 align-items: center;
+                padding: 10px 10px 12px;
                 margin-bottom: 10px;
 
                 &:active,&.active {
@@ -108,10 +110,11 @@
 
                 i {
                     margin-right: 10px;
+                    flex-shrink: 0;
 
                     &.about {
-                        width: 5.8vw;
-                        height: 6vw;
+                        width: 4.8vw;
+                        height: 5vw;
 
                         &.q1 {
                             background-position-x: 0;
@@ -140,8 +143,8 @@
                     }
 
                     &.new {
-                        width: 6vw;
-                        height: 6vw;
+                        width: 5vw;
+                        height: 5vw;
 
                         &.q1 {
                             background-position-x: 0;
@@ -161,8 +164,8 @@
                     }
 
                     &.often {
-                        width: 6vw;
-                        height: 6vw;
+                        width: 5vw;
+                        height: 5vw;
 
                         &.q1 {
                             background-position-x: 0;
@@ -216,7 +219,7 @@
 
             .title {
                 width: 92vw;
-                height: 42px;
+                height: auto;
                 @include titleBG_1;
                 border: solid 1px $mainBorder_1;
                 border-radius: 5px;
@@ -224,7 +227,7 @@
                 align-items: center;
                 justify-content: space-between;
                 margin: 0 auto;
-                padding: 0 10px;
+                padding: 10px 10px 12px;
                 position: relative;
                 z-index: 1;
 
@@ -236,14 +239,16 @@
                 }
 
                 p {
-                    color: $mainWord_1;
+                    color: $title_1;
                     font-size: 3.7vw;
                     font-weight: bold;
+                    line-height: 4.2vw;
                     display: flex;
                     align-items: center;
 
                     i {
                         margin-right: 10px;
+                        flex-shrink: 0;
     
                         &.about {
                             width: 5.8vw;
@@ -339,7 +344,7 @@
                     }
 
                     &.smallTitle {
-                        color: $title_1;
+                        color: $title_2;
                         font-size: 5vw;
                         margin: 20px 0 10px;
 

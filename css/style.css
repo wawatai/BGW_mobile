@@ -699,6 +699,7 @@ html body .marqueeBox::before {
   background: linear-gradient(to bottom, #454444 0%, transparent 70%);
   border-radius: 30px;
   position: absolute;
+  top: 1px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1092,7 +1093,7 @@ html body .homeCenter .gameBox li .fixBox {
           flex-direction: column;
 }
 html body .homeCenter .gameBox li .fixBox p {
-  color: #fed792;
+  color: #f2d095;
   font-size: 2vw;
   font-weight: bold;
   text-align: center;
@@ -1598,7 +1599,7 @@ html body .filter .jumpWindow.ruleWindow .content .ruleBody {
   margin: 16px auto;
 }
 html body .filter .jumpWindow.ruleWindow .content .ruleBody h2 {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4.3vw;
   font-weight: bold;
   line-height: 1.8;
@@ -1747,7 +1748,10 @@ html body .filter .jumpWindow.gameWindow form .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 8vw;
+  margin-bottom: 5vw;
+}
+html body .filter .jumpWindow.gameWindow form .row:last-child {
+  margin: 0;
 }
 html body .filter .jumpWindow.gameWindow form .row.checkBtn {
   -webkit-box-pack: end;
@@ -1771,7 +1775,7 @@ html body .filter .jumpWindow.gameWindow form .row.checkBtn button:active, html 
 }
 html body .filter .jumpWindow.gameWindow form .row .smallTitle {
   width: 20vw;
-  color: #fed792;
+  color: #f2d095;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -2640,7 +2644,7 @@ html body .eventDetail .detailContent .box .title {
           justify-content: center;
 }
 html body .eventDetail .detailContent .box .title p {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4vw;
   font-weight: bold;
 }
@@ -3582,7 +3586,7 @@ html body .memberPlatform .platformBox .title {
   padding: 0 16px;
 }
 html body .memberPlatform .platformBox .title p {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4vw;
   font-weight: bold;
 }
@@ -3762,7 +3766,7 @@ html body .helpWrap .helpBody ul {
 }
 html body .helpWrap .helpBody ul li {
   width: 100%;
-  height: 42px;
+  height: auto;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #252525), color-stop(93%, #383838));
   background: linear-gradient(to top, #252525 8%, #383838 93%);
   border: solid 1px #b09365;
@@ -3771,6 +3775,7 @@ html body .helpWrap .helpBody ul li {
   font-weight: bold;
   border-radius: 5px;
   padding: 0 10px 2px;
+  color: #f2d095;
   font-size: 3.7vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3778,6 +3783,7 @@ html body .helpWrap .helpBody ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 10px 12px;
   margin-bottom: 10px;
 }
 html body .helpWrap .helpBody ul li:active, html body .helpWrap .helpBody ul li.active {
@@ -3793,10 +3799,12 @@ html body .helpWrap .helpBody ul li:last-child {
 }
 html body .helpWrap .helpBody ul li i {
   margin-right: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .helpWrap .helpBody ul li i.about {
-  width: 5.8vw;
-  height: 6vw;
+  width: 4.8vw;
+  height: 5vw;
 }
 html body .helpWrap .helpBody ul li i.about.q1 {
   background-position-x: 0;
@@ -3823,8 +3831,8 @@ html body .helpWrap .helpBody ul li i.about.q8 {
   background-position-x: 87.5%;
 }
 html body .helpWrap .helpBody ul li i.new {
-  width: 6vw;
-  height: 6vw;
+  width: 5vw;
+  height: 5vw;
 }
 html body .helpWrap .helpBody ul li i.new.q1 {
   background-position-x: 0;
@@ -3842,8 +3850,8 @@ html body .helpWrap .helpBody ul li i.new.q5 {
   background-position-x: 100%;
 }
 html body .helpWrap .helpBody ul li i.often {
-  width: 6vw;
-  height: 6vw;
+  width: 5vw;
+  height: 5vw;
 }
 html body .helpWrap .helpBody ul li i.often.q1 {
   background-position-x: 0;
@@ -3883,7 +3891,7 @@ html body .helpInner ul li.active .textBox {
 }
 html body .helpInner ul li .title {
   width: 92vw;
-  height: 42px;
+  height: auto;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #252525), color-stop(93%, #383838));
   background: linear-gradient(to top, #252525 8%, #383838 93%);
   border-bottom: solid 1px #464646;
@@ -3899,7 +3907,7 @@ html body .helpInner ul li .title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 10px 10px 12px;
   position: relative;
   z-index: 1;
 }
@@ -3912,9 +3920,10 @@ html body .helpInner ul li .title .arrow_ic {
   transition: 0.3s all;
 }
 html body .helpInner ul li .title p {
-  color: #d3ae6d;
+  color: #f2d095;
   font-size: 3.7vw;
   font-weight: bold;
+  line-height: 4.2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3924,6 +3933,8 @@ html body .helpInner ul li .title p {
 }
 html body .helpInner ul li .title p i {
   margin-right: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .helpInner ul li .title p i.about {
   width: 5.8vw;
@@ -4008,7 +4019,7 @@ html body .helpInner ul li .textBox p:last-child {
   margin: 0;
 }
 html body .helpInner ul li .textBox p.smallTitle {
-  color: #fed792;
+  color: #ffe4b5;
   font-size: 5vw;
   margin: 20px 0 10px;
 }
@@ -4140,7 +4151,7 @@ html body .applyList .listBox .list .title {
           justify-content: center;
 }
 html body .applyList .listBox .list .title p {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4vw;
   font-weight: bold;
 }
@@ -4177,7 +4188,7 @@ html body .applyList .listBox .list ul li .num.noLimit {
   color: #ff2e2e;
 }
 html body .applyList .listBox .list ul li .num .total {
-  color: #fed792;
+  color: #f2d095;
 }
 html body .applyList .listBox .list .btnBox {
   width: 100%;
@@ -4447,7 +4458,7 @@ html body .applyList .recordList .recordBox .title {
   padding: 0 16px;
 }
 html body .applyList .recordList .recordBox .title p {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4vw;
   font-weight: bold;
 }
@@ -4478,11 +4489,11 @@ html body .applyList .recordList .recordBox .title button:active, html body .app
 html body .applyList .recordList .recordBox ul {
   width: 100%;
   height: auto;
-  padding: 0 18px;
+  padding: 16px;
 }
 html body .applyList .recordList .recordBox ul li {
   width: 100%;
-  height: 38px;
+  height: auto;
   color: #d3ae6d;
   font-size: 3.7vw;
   font-weight: bold;
@@ -4495,6 +4506,10 @@ html body .applyList .recordList .recordBox ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
+}
+html body .applyList .recordList .recordBox ul li:last-child {
+  margin: 0;
 }
 html body .applyList .recordList .recordBox ul li p {
   width: 70%;
@@ -4783,7 +4798,7 @@ html body .vipWrap .enjoyBox {
   border-bottom: solid 1px #464646;
 }
 html body .vipWrap .enjoyBox .title {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4vw;
   font-weight: bold;
   letter-spacing: 2px;
@@ -4877,7 +4892,7 @@ html body .vipDetail .lvWrap:last-child {
   margin-bottom: 0;
 }
 html body .vipDetail .lvWrap .title {
-  color: #fed792;
+  color: #f2d095;
   font-size: 5vw;
   font-weight: bold;
   margin-bottom: 12px;
@@ -4956,7 +4971,7 @@ html body .vipDetail .lvWrap .list .left li.smallTitle {
   border-bottom: solid 1px #bf9e67;
 }
 html body .vipDetail .lvWrap .list .left li.smallTitle p {
-  color: #fed792;
+  color: #f2d095;
 }
 html body .vipDetail .lvWrap .list .left li p {
   width: 100%;
@@ -5001,7 +5016,7 @@ html body .vipDetail .lvWrap .list .right ul li.smallTitle {
   border-bottom: solid 1px #bf9e67;
 }
 html body .vipDetail .lvWrap .list .right ul li.smallTitle p {
-  color: #fed792;
+  color: #f2d095;
 }
 html body .vipDetail .lvWrap .list .right ul li p {
   width: 100%;
@@ -5376,10 +5391,32 @@ html body .mailBody .mailBox ul li.read .textBox p {
 }
 html body .mailBody .mailBox ul li .title {
   width: 100%;
-  color: #fed792;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .mailBody .mailBox ul li .title p {
+  width: 100%;
+  color: #f2d095;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 32px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+html body .mailBody .mailBox ul li .title span {
+  color: #9a9a9a;
+  font-size: 2vw;
+  font-weight: bold;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .mailBody .mailBox ul li .textBox {
   width: 100%;
@@ -5394,14 +5431,6 @@ html body .mailBody .mailBox ul li .textBox p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-html body .mailBody .mailBox ul li .textBox .date {
-  position: absolute;
-  top: -5vw;
-  right: 10px;
-  color: #9a9a9a;
-  font-size: 2vw;
-  font-weight: bold;
 }
 html body .mailBody .mailBox ul li .inputBox {
   display: none;
@@ -5493,7 +5522,7 @@ html body .cardList .cardBox .title {
   margin-bottom: 12px;
 }
 html body .cardList .cardBox .title span {
-  color: #fed792;
+  color: #f2d095;
   padding-left: 3vw;
 }
 html body .cardList .cardBox ul {
@@ -5926,7 +5955,7 @@ html body .bettingWrap .list .recordBox .title {
   padding: 0 16px;
 }
 html body .bettingWrap .list .recordBox .title p {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4vw;
   font-weight: bold;
 }
@@ -5954,11 +5983,11 @@ html body .bettingWrap .list .recordBox .title button:active, html body .betting
 html body .bettingWrap .list .recordBox ul {
   width: 100%;
   height: auto;
-  padding: 0 18px;
+  padding: 16px;
 }
 html body .bettingWrap .list .recordBox ul li {
   width: 100%;
-  height: 38px;
+  height: auto;
   color: #d3ae6d;
   font-size: 3.7vw;
   font-weight: bold;
@@ -5971,6 +6000,10 @@ html body .bettingWrap .list .recordBox ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
+}
+html body .bettingWrap .list .recordBox ul li:last-child {
+  margin: 0;
 }
 html body .bettingWrap .list .recordBox ul li p {
   width: 70%;
@@ -5990,7 +6023,7 @@ html body .bettingWrap .list .recordBox ul li p.num.lose {
   color: #ff2e2e;
 }
 html body .bettingWrap .list .recordBox ul li p.num.result {
-  color: #fed792;
+  color: #f2d095;
 }
 html body .bettingWrap .list .recordBox .innerBox {
   width: 100%;
@@ -6033,7 +6066,7 @@ html body .bettingWrap .list .recordBox .innerBox .box .smallTitle {
   padding: 0 16px;
 }
 html body .bettingWrap .list .recordBox .innerBox .box .smallTitle p {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4vw;
   font-weight: bold;
 }
@@ -6161,7 +6194,7 @@ html body .waterBox ul li .title {
           align-items: center;
 }
 html body .waterBox ul li .title p {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4vw;
   font-weight: bold;
 }
@@ -6488,7 +6521,7 @@ html body .depositWrap .depContent.already ul li p {
   font-weight: bold;
 }
 html body .depositWrap .depContent.already ul li p.title {
-  color: #fed792;
+  color: #f2d095;
   font-size: 6vw;
 }
 html body .depositWrap .depContent.already ul li p.smallTitle {
@@ -6573,7 +6606,7 @@ html body .depositWrap .depContent .remindBox p:last-child {
   margin: 0;
 }
 html body .depositWrap .depContent .remindBox p.title {
-  color: #fed792;
+  color: #f2d095;
   font-size: 3.7vw;
   font-weight: bold;
   letter-spacing: 1px;
@@ -6682,7 +6715,7 @@ html body .transWrap .transBox .selectBox select {
 }
 html body .transWrap .transBox .selectBox .smallWord {
   color: #d3ae6d;
-  font-size: 2vw;
+  font-size: 3.4vw;
   font-weight: bold;
   position: absolute;
   top: 50%;
@@ -7153,7 +7186,7 @@ html body .withWrap .remindBox p:last-child {
   margin: 0;
 }
 html body .withWrap .remindBox p.title {
-  color: #fed792;
+  color: #f2d095;
   font-size: 4vw;
   font-weight: bold;
   letter-spacing: 1px;

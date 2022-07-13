@@ -456,7 +456,11 @@
                     height: auto;
                     display: flex;
                     align-items: center;
-                    margin-bottom: 8vw;
+                    margin-bottom: 5vw;
+
+                    &:last-child {
+                        margin: 0;
+                    }
 
                     &.checkBtn {
                         justify-content: flex-end;
