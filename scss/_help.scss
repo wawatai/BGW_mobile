@@ -32,18 +32,27 @@
                 align-items: center;
 
                 i {
-                    width: 6vw;
-                    height: 5.5vw;
+                    width: 24px;
+                    height: 24px;
                     margin-right: 10px;
+                    position: relative;
+                    overflow: hidden;
 
-                    &.about {
-                        background-position-x: 0;
+                    &.active {
+
+                        &::before {
+                            top: -24px;
+                        }
                     }
-                    &.often {
-                        background-position-x: 50%;
-                    }
-                    &.new {
-                        background-position-x: 100%;
+    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        filter: drop-shadow(0 24px 0 #101010);
                     }
                 }
             }
@@ -100,7 +109,10 @@
                 &:active,&.active {
 
                     i {
-                        background-position-y: 100%;
+                        
+                        &::before {
+                            top: -20px;
+                        }
                     }
                 }
 
@@ -109,70 +121,21 @@
                 }
 
                 i {
+                    width: 20px;
+                    height: 20px;
                     margin-right: 10px;
                     flex-shrink: 0;
-
-                    &.about {
-                        width: 4.8vw;
-                        height: 5vw;
-
-                        &.q1 {
-                            background-position-x: 0;
-                        }
-                        &.q2 {
-                            background-position-x: 12.5%;
-                        }
-                        &.q3 {
-                            background-position-x: 25%;
-                        }
-                        &.q4 {
-                            background-position-x: 37.5%;
-                        }
-                        &.q5 {
-                            background-position-x: 50%;
-                        }
-                        &.q6 {
-                            background-position-x: 62.5%;
-                        }
-                        &.q7 {
-                            background-position-x: 75%;
-                        }
-                        &.q8 {
-                            background-position-x: 87.5%;
-                        }
-                    }
-
-                    &.new {
-                        width: 5vw;
-                        height: 5vw;
-
-                        &.q1 {
-                            background-position-x: 0;
-                        }
-                        &.q2 {
-                            background-position-x: 25%;
-                        }
-                        &.q3 {
-                            background-position-x: 50%;
-                        }
-                        &.q4 {
-                            background-position-x: 75%;
-                        }
-                        &.q5 {
-                            background-position-x: 100%;
-                        }
-                    }
-
-                    &.often {
-                        width: 5vw;
-                        height: 5vw;
-
-                        &.q1 {
-                            background-position-x: 0;
-                        }
-                        &.q2 {
-                            background-position-x: 100%;
-                        }
+                    position: relative;
+                    overflow: hidden;
+    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        filter: drop-shadow(0 20px 0 #101010);
                     }
                 }
             }
@@ -247,70 +210,21 @@
                     align-items: center;
 
                     i {
+                        width: 20px;
+                        height: 20px;
                         margin-right: 10px;
                         flex-shrink: 0;
-    
-                        &.about {
-                            width: 5.8vw;
-                            height: 6vw;
-    
-                            &.q1 {
-                                background-position-x: 0;
-                            }
-                            &.q2 {
-                                background-position-x: 12.5%;
-                            }
-                            &.q3 {
-                                background-position-x: 25%;
-                            }
-                            &.q4 {
-                                background-position-x: 37.5%;
-                            }
-                            &.q5 {
-                                background-position-x: 50%;
-                            }
-                            &.q6 {
-                                background-position-x: 62.5%;
-                            }
-                            &.q7 {
-                                background-position-x: 75%;
-                            }
-                            &.q8 {
-                                background-position-x: 87.5%;
-                            }
-                        }
-    
-                        &.new {
-                            width: 6vw;
-                            height: 6vw;
-    
-                            &.q1 {
-                                background-position-x: 0;
-                            }
-                            &.q2 {
-                                background-position-x: 25%;
-                            }
-                            &.q3 {
-                                background-position-x: 50%;
-                            }
-                            &.q4 {
-                                background-position-x: 75%;
-                            }
-                            &.q5 {
-                                background-position-x: 100%;
-                            }
-                        }
-    
-                        &.often {
-                            width: 6vw;
-                            height: 6vw;
-    
-                            &.q1 {
-                                background-position-x: 0;
-                            }
-                            &.q2 {
-                                background-position-x: 100%;
-                            }
+                        position: relative;
+                        overflow: hidden;
+        
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                            filter: drop-shadow(0 20px 0 #101010);
                         }
                     }
                 }
@@ -385,6 +299,24 @@
                     }
                     &.license {
                         padding-top: 134%;
+                    }
+                    &.dg_1 {
+                        padding-top: 70%;
+                    }
+                    &.dg_2 {
+                        padding-top: 61%;
+                    }
+                    &.sa_1 {
+                        padding-top: 125%;
+                    }
+                    &.sa_2 {
+                        padding-top: 161%;
+                    }
+                    &.ab_1 {
+                        padding-top: 58%;
+                    }
+                    &.ab_2 {
+                        padding-top: 56%;
                     }
                 }
 

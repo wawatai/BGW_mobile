@@ -33,32 +33,27 @@ footer {
                 }
 
                 i {
-                    background-position-y: 100%;
+                    
+                    &::before {
+                        top: -24px;
+                    }
                 }
             }
 
             i {
                 width: 24px;
                 height: 24px;
+                position: relative;
+                overflow: hidden;
 
-                &.menu {
-                    background-position-x: 0;
-                }
-
-                &.event {
-                    background-position-x: 25%;
-                }
-
-                &.wallet {
-                    background-position-x: 50%;
-                }
-
-                &.service {
-                    background-position-x: 75%;
-                }
-
-                &.center {
-                    background-position-x: 100%;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    filter: drop-shadow(0 24px 0 #efcc8e);
                 }
             }
 

@@ -48,7 +48,7 @@
                     width: 22.93vw;
                     height: 30.13vw;
                     position: absolute;
-                    top: -2vw;
+                    top: -4vw;
                     right: 5vw;
                 }
             }
@@ -191,14 +191,23 @@
             box-sizing: border-box;
             padding: 0 2vw;
             margin-top: 16px;
+            position: relative;
 
-            i {
+            i:not(.medal) {
                 width: 2vw;
                 height: 3.4vw;
 
                 &.next {
                     transform: scaleX(-1);
                 }
+            }
+
+            .medal {
+                width: 18vw;
+                height: 27vw;
+                position: absolute;
+                left: 8vw;
+                top: 0;
             }
 
             .card {
@@ -215,19 +224,17 @@
                         width: 87.27vw;
                         height: 47.46vw;
                         display: flex;
-                        justify-content: flex-end;
+                        align-items: flex-end;
                         flex-shrink: 0;
                         padding: 0 6.67vw;
+                        position: relative;
 
                         &>div {
+                            width: 100%;
+                            height: auto;
                             display: flex;
-                            flex-direction: column;
                             justify-content: space-around;
-                            padding: 3vw 0;
-
-                            &:last-child {
-                                margin-left: 7vw;
-                            }
+                            margin-bottom: 30px;
 
                             .textBox {
                                 width: auto;

@@ -42,26 +42,27 @@
                     &:active,&.active {
                         
                         i {
-                            background-position-y: 100%;
+                            
+                            &::before {
+                                top: -32px;
+                            }
                         }
                     }
 
                     i {
-                        display: block;
-                        width: 8.27vw;
-                        height: 8.27vw;
+                        width: 32px;
+                        height: 32px;
+                        position: relative;
+                        overflow: hidden;
 
-                        &.card {
-                            background-position-x: 0;
-                        }
-                        &.atm {
-                            background-position-x: 25%;
-                        }
-                        &.shop {
-                            background-position-x: 50%;
-                        }
-                        &.usdt {
-                            background-position-x: 75%;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                            filter: drop-shadow(0 32px 0 #101010);
                         }
                     }
 

@@ -11,7 +11,7 @@ header .content {
     background-size: cover;
 }
 header .msg_ic {
-    background: url('../images/icon/header_msgIC.png') no-repeat;
+    background: url('../images/icon/svg/header_msg.svg') no-repeat;
     background-size: contain;
 }
 header .back_arrow {
@@ -23,53 +23,145 @@ header .refresh_ic {
     background-size: contain;
 }
 header .edit_ic {
-    background: url('../images/icon/svg/edit.svg') no-repeat;
+    background: url('../images/icon/svg/header_edit.svg') no-repeat;
     background-size: contain;
 }
 
 //marquee
 .marqueeBox .marquee_ic {
-    background: url('../images/icon/marqueeIC.png') no-repeat;
+    background: url('../images/icon/svg/marquee.svg') no-repeat;
     background-size: contain;
 }
 
 //memberArea
-.memberArea .operate_ic {
-    background: url("../images/icon/memberArea_operateIC.png") no-repeat;
-    background-size: 500%;
+.operate .deposit {
+    background: url("../images/icon/svg/operate_deposit.svg") no-repeat;
+    background-size: contain;
+}
+.operate .transfer {
+    background: url("../images/icon/svg/operate_transfer.svg") no-repeat;
+    background-size: contain;
+}
+.operate .withdrawal {
+    background: url("../images/icon/svg/operate_withdrawal.svg") no-repeat;
+    background-size: contain;
+}
+.operate .vip {
+    background: url("../images/icon/svg/operate_vip.svg") no-repeat;
+    background-size: contain;
 }
 
 //homeCenter
-.homeCenter .gameList_ic {
-    background: url('../images/icon/homeCenter_gameListIC.png') no-repeat;
-    background-size: 600%;
+.gameList .sport::before {
+    background: url('../images/icon/svg/gameList_sport.svg') no-repeat;
+    background-size: contain;
+}
+.gameList .slot::before {
+    background: url('../images/icon/svg/gameList_slot.svg') no-repeat;
+    background-size: contain;
+}
+.gameList .live::before {
+    background: url('../images/icon/svg/gameList_live.svg') no-repeat;
+    background-size: contain;
+}
+.gameList .fish::before {
+    background: url('../images/icon/svg/gameList_fish.svg') no-repeat;
+    background-size: contain;
+}
+.gameList .board::before {
+    background: url('../images/icon/svg/gameList_board.svg') no-repeat;
+    background-size: contain;
+}
+.gameList .lottery::before {
+    background: url('../images/icon/svg/gameList_lottery.svg') no-repeat;
+    background-size: contain;
 }
 
 //footer
-footer .list_ic {
-    background: url('../images/icon/footer_ListIC.png') no-repeat;
-    background-size: 500%;
+footer .list_ic.menu::before {
+    background: url('../images/icon/svg/footer_listIC_menu.svg') no-repeat;
+    background-size: contain;
+}
+footer .list_ic.wallet::before {
+    background: url('../images/icon/svg/footer_listIC_wallet.svg') no-repeat;
+    background-size: contain;
+}
+footer .list_ic.center::before {
+    background: url('../images/icon/svg/footer_listIC_center.svg') no-repeat;
+    background-size: contain;
+}
+footer .list_ic.service::before {
+    background: url('../images/icon/svg/footer_listIC_service.svg') no-repeat;
+    background-size: contain;
+}
+footer .list_ic.event::before {
+    background: url('../images/icon/svg/footer_listIC_event.svg') no-repeat;
+    background-size: contain;
 }
 
 //member
-.memberWrap .bigList_ic {
-    background: url('../images/icon/member_bigListIC.png') no-repeat;
-    background-size: 200%;
+.memberWrap .bigList_ic.wallet::before {
+    background: url('../images/icon/svg/member_bigListIC_wallet.svg') no-repeat;
+    background-size: contain;
 }
-.memberWrap .list_ic {
-    background: url('../images/icon/member_listIC.png') no-repeat;
-    background-size: 500%;
+.memberWrap .bigList_ic.vip::before {
+    background: url('../images/icon/svg/member_bigListIC_vip.svg') no-repeat;
+    background-size: contain;
 }
-.memberWrap .option_ic {
-    background: url("../images/icon/member_optionIC.png") no-repeat;
-    background-size: 900%;
+.memberWrap .list_ic.bettingRecord {
+    background: url('../images/icon/svg/member_listIC_bettingRecord.svg') no-repeat;
+    background-size: contain;
+}
+.memberWrap .list_ic.dealRecord {
+    background: url('../images/icon/svg/member_listIC_dealRecord.svg') no-repeat;
+    background-size: contain;
+}
+.memberWrap .list_ic.mail {
+    background: url('../images/icon/svg/member_listIC_mail.svg') no-repeat;
+    background-size: contain;
+}
+.memberWrap .list_ic.card {
+    background: url('../images/icon/svg/member_listIC_card.svg') no-repeat;
+    background-size: contain;
+}
+.memberWrap .option_ic.invite::before {
+    background: url("../images/icon/svg/member_optionIC_invite.svg") no-repeat;
+    background-size: contain;
+}
+.memberWrap .option_ic.point::before {
+    background: url("../images/icon/svg/member_optionIC_point.svg") no-repeat;
+    background-size: contain;
+}
+.memberWrap .option_ic.eventApply::before {
+    background: url("../images/icon/svg/member_optionIC_eventApply.svg") no-repeat;
+    background-size: contain;
+}
+.memberWrap .option_ic.help::before {
+    background: url("../images/icon/svg/member_optionIC_help.svg") no-repeat;
+    background-size: contain;
+}
+.memberWrap .option_ic.about::before {
+    background: url("../images/icon/svg/member_optionIC_about.svg") no-repeat;
+    background-size: contain;
+}
+.memberWrap .option_ic.app::before {
+    background: url("../images/icon/svg/member_optionIC_app.svg") no-repeat;
+    background-size: contain;
+}
+.memberWrap .option_ic.lang::before {
+    background: url("../images/icon/svg/member_optionIC_lang.svg") no-repeat;
+    background-size: contain;
+}
+.memberWrap .option_ic.logout::before {
+    background: url("../images/icon/svg/member_optionIC_logout.svg") no-repeat;
+    background-size: contain;
 }
 .memberWrap .arrow_ic {
     background: url('../images/icon/arrow_b.png') no-repeat;
     background-size: 100%;
 }
 .memberInfo .date_ic {
-    background: url('../images/icon/date.png') no-repeat;
+    background: url('../images/icon/svg/calender.svg') no-repeat;
     background-size: contain;
 }
 .memberInfo .noCheck::before {
@@ -82,13 +174,25 @@ footer .list_ic {
 }
 
 //wallet
-.walletWrap .list_ic {
-    background: url('../images/icon/wallet_listIC.png') no-repeat;
-    background-size: 300%;
+.walletWrap .list_ic.deposit {
+    background: url('../images/icon/svg/wallet_listIC_deposit.svg') no-repeat;
+    background-size: contain;
 }
-.walletWrap .options_ic {
-    background: url('../images/icon/wallet_optionsIC.png') no-repeat;
-    background-size: 200%;
+.walletWrap .list_ic.transfer {
+    background: url('../images/icon/svg/wallet_listIC_transfer.svg') no-repeat;
+    background-size: contain;
+}
+.walletWrap .list_ic.withdrawal {
+    background: url('../images/icon/svg/wallet_listIC_withdrawal.svg') no-repeat;
+    background-size: contain;
+}
+.walletWrap .options_ic.dealRecord::before {
+    background: url('../images/icon/svg/member_listIC_dealRecord.svg') no-repeat;
+    background-size: contain;
+}
+.walletWrap .options_ic.bettingRecord::before {
+    background: url('../images/icon/svg/member_listIC_bettingRecord.svg') no-repeat;
+    background-size: contain;
 }
 .walletWrap .arrow_ic {
     background: url('../images/icon/arrow_b.png') no-repeat;
@@ -101,7 +205,7 @@ footer .list_ic {
 
 //各式紀錄
 .bettingWrap .date_ic {
-    background: url('../images/icon/date.png') no-repeat;
+    background: url('../images/icon/svg/calender.svg') no-repeat;
     background-size: contain;
 }
 .bettingWrap .db_arrow {
@@ -111,14 +215,26 @@ footer .list_ic {
 
 //eventApply
 .applyList .searchContent .date_ic {
-    background: url('../images/icon/date.png') no-repeat;
+    background: url('../images/icon/svg/calender.svg') no-repeat;
     background-size: contain;
 }
 
 //deposit
-.depositWrap .list_ic {
-    background: url('../images/icon/deposit_listIC.png') no-repeat;
-    background-size: 500%;
+.depositWrap .list_ic.card::before {
+    background: url('../images/icon/svg/deposit_listIC_card.svg') no-repeat;
+    background-size: contain;
+}
+.depositWrap .list_ic.atm::before {
+    background: url('../images/icon/svg/deposit_listIC_atm.svg') no-repeat;
+    background-size: contain;
+}
+.depositWrap .list_ic.shop::before {
+    background: url('../images/icon/svg/deposit_listIC_shop.svg') no-repeat;
+    background-size: contain;
+}
+.depositWrap .list_ic.usdt::before {
+    background: url('../images/icon/svg/deposit_listIC_usdt.svg') no-repeat;
+    background-size: contain;
 }
 .depositWrap .listWrap li.active::after {
     background: url('../images/icon/check_w.png') no-repeat center;
@@ -170,49 +286,157 @@ footer .list_ic {
 }
 
 //event
-.eventType .list_ic {
-    background: url('../images/icon/event_listIC.png') no-repeat;
-    background-size: 500%;
+.eventType .list_ic.all::before {
+    background: url('../images/icon/svg/eventType_listIC_all.svg') no-repeat;
+    background-size: contain;
+}
+.eventType .list_ic.fixed::before {
+    background: url('../images/icon/svg/eventType_listIC_fixed.svg') no-repeat;
+    background-size: contain;
+}
+.eventType .list_ic.percent::before {
+    background: url('../images/icon/svg/eventType_listIC_percent.svg') no-repeat;
+    background-size: contain;
+}
+.eventType .list_ic.stage::before {
+    background: url('../images/icon/svg/eventType_listIC_stage.svg') no-repeat;
+    background-size: contain;
 }
 
 //slotPage
-.slotWrap .list_ic {
-    background: url('../images/icon/slotPage_listIC.png') no-repeat;
-    background-size: 300%;
+.slotWrap .list_ic.all::before {
+    background: url('../images/icon/svg/slotWrap_listIC_all.svg') no-repeat;
+    background-size: contain;
+}
+.slotWrap .list_ic.hot::before {
+    background: url('../images/icon/svg/slotWrap_listIC_hot.svg') no-repeat;
+    background-size: contain;
+}
+.slotWrap .list_ic.love::before {
+    background: url('../images/icon/svg/slotWrap_listIC_love.svg') no-repeat;
+    background-size: contain;
 }
 .slotWrap .search_ic {
     background: url('../images/icon/svg/search.svg') no-repeat;
     background-size: 100%;
 }
 .slotWrap .love_ic {
-    background: url('../images/icon/slotPage_loveIC.png') no-repeat;
-    background-size: 200%;
+    background: url('../images/icon/svg/slotWrap_love.svg') no-repeat;
+    background-size: contain;
+}
+.slotWrap .love_ic.active {
+    background: url('../images/icon/svg/slotWrap_loveActive.svg') no-repeat;
+    background-size: contain;
 }
 
 //help
-.helpWrap .topList_ic {
-    background: url('../images/icon/help_topListIC.png') no-repeat;
-    background-size: 300%;
+.helpWrap .topList_ic.about::before {
+    background: url('../images/icon/svg/helpHeader_about.svg') no-repeat;
+    background-size: contain;
+}
+.helpWrap .topList_ic.often::before {
+    background: url('../images/icon/svg/helpHeader_often.svg') no-repeat;
+    background-size: contain
+}
+.helpWrap .topList_ic.new::before {
+    background: url('../images/icon/svg/helpHeader_new.svg') no-repeat;
+    background-size: contain;
+}
+.helpWrap .topList_ic.app::before {
+    background: url('../images/icon/svg/helpHeader_app.svg') no-repeat;
+    background-size: contain;
 }
 .helpWrap .arrow_ic,
 .helpInner .arrow_ic {
     background: url('../images/icon/arrow_b.png') no-repeat;
     background-size: 100%;
 }
-.helpWrap .list_ic.about,
-.helpInner .list_ic.about {
-    background: url('../images/icon/help_listIC_about.png') no-repeat;
-    background-size: 900%;
+.helpBody .often.q1::before,
+.helpInner .often.q1::before {
+    background: url('../images/icon/svg/helpHeader_often.svg') no-repeat;
+    background-size: contain;
 }
-.helpWrap .list_ic.new,
-.helpInner .list_ic.new {
-    background: url('../images/icon/help_listIC_new.png') no-repeat;
-    background-size: 500%;
+.helpBody .often.q2::before,
+.helpInner .often.q2::before {
+    background: url('../images/icon/svg/helpBody_often_q2.svg') no-repeat;
+    background-size: contain;
 }
-.helpWrap .list_ic.often,
-.helpInner .list_ic.often {
-    background: url('../images/icon/help_listIC_often.png') no-repeat;
-    background-size: 200%;
+.helpBody .new.q1::before,
+.helpInner .new.q1::before {
+    background: url('../images/icon/svg/helpBody_new_q1.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .new.q2::before,
+.helpInner .new.q2::before {
+    background: url('../images/icon/svg/helpBody_new_q2.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .new.q3::before,
+.helpInner .new.q3::before {
+    background: url('../images/icon/svg/helpBody_new_q3.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .new.q4::before,
+.helpInner .new.q4::before {
+    background: url('../images/icon/svg/helpBody_new_q4.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .new.q5::before,
+.helpInner .new.q5::before {
+    background: url('../images/icon/svg/helpBody_new_q5.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .about.q1::before,
+.helpInner .about.q1::before {
+    background: url('../images/icon/svg/helpBody_about_q1.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .about.q2::before,
+.helpInner .about.q2::before {
+    background: url('../images/icon/svg/helpBody_about_q2.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .about.q3::before,
+.helpInner .about.q3::before {
+    background: url('../images/icon/svg/helpBody_about_q3.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .about.q4::before,
+.helpInner .about.q4::before {
+    background: url('../images/icon/svg/helpBody_about_q4.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .about.q5::before,
+.helpInner .about.q5::before {
+    background: url('../images/icon/svg/helpBody_about_q5.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .about.q6::before,
+.helpInner .about.q6::before {
+    background: url('../images/icon/svg/helpBody_about_q6.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .about.q7::before,
+.helpInner .about.q7::before {
+    background: url('../images/icon/svg/helpBody_about_q7.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .about.q8::before,
+.helpInner .about.q8::before {
+    background: url('../images/icon/svg/helpBody_about_q8.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .app.q1::before {
+    background: url('../images/icon/svg/helpBody_app_q1.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .app.q2::before {
+    background: url('../images/icon/svg/helpBody_app_q2.svg') no-repeat;
+    background-size: contain;
+}
+.helpBody .app.q3::before {
+    background: url('../images/icon/svg/helpBody_app_q3.svg') no-repeat;
+    background-size: contain;
 }
 .helpInner .img.deposit_water {
     background: url('../images/help/online01.png') no-repeat;
@@ -239,20 +463,97 @@ footer .list_ic {
     background: url('../images/help/license.jpg') no-repeat;
     background-size: 100%;
 }
+.helpInner .img.dg_1 {
+    background: url('../images/help/app_DG_1.png') no-repeat;
+    background-size: 100%;
+}
+.helpInner .img.dg_2 {
+    background: url('../images/help/app_DG_2.png') no-repeat;
+    background-size: 100%;
+}
+.helpInner .img.sa_1 {
+    background: url('../images/help/app_SA_1.jpg') no-repeat;
+    background-size: 100%;
+}
+.helpInner .img.sa_2 {
+    background: url('../images/help/app_SA_2.jpg') no-repeat;
+    background-size: 100%;
+}
+.helpInner .img.ab_1 {
+    background: url('../images/help/app_AB_1.jpg') no-repeat;
+    background-size: 100%;
+}
+.helpInner .img.ab_2 {
+    background: url('../images/help/app_AB_2.jpg') no-repeat;
+    background-size: 100%;
+}
 
 //vip
+.vipWrap .medal.vip0 {
+    background: url('../images/medal_0.png') no-repeat center;
+    background-size: contain;
+}
 .vipWrap .medal {
     background: url('../images/medal.png') no-repeat center;
     background-size: contain;
 }
-.vipWrap .cardBox i,
+.vipWrap .medal.vip2 {
+    background: url('../images/medal_2.png') no-repeat center;
+    background-size: contain;
+}
+.vipWrap .medal.vip3 {
+    background: url('../images/medal_3.png') no-repeat center;
+    background-size: contain;
+}
+.vipWrap .medal.vip4 {
+    background: url('../images/medal_4.png') no-repeat center;
+    background-size: contain;
+}
+.vipWrap .medal.vip5 {
+    background: url('../images/medal_5.png') no-repeat center;
+    background-size: contain;
+}
+.vipWrap .medal.vip6 {
+    background: url('../images/medal_6.png') no-repeat center;
+    background-size: contain;
+}
+.vipWrap .medal.vip7 {
+    background: url('../images/medal_7.png') no-repeat center;
+    background-size: contain;
+}
+.vipWrap .cardBox i.prev,
+.vipWrap .cardBox i.next,
 .vipWrap .checkBtn .arrow_ic,
 .vipDetail .list i::before {
     background: url('../images/icon/arrow_b.png') no-repeat;
     background-size: 100%;
 }
-.vipWrap .cardBox .card li.vip0 {
+.vipWrap .cardBox .card li {
     background: url('../images/vip_card.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .cardBox .card li.vip2 {
+    background: url('../images/vip_card_2.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .cardBox .card li.vip3 {
+    background: url('../images/vip_card_3.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .cardBox .card li.vip4 {
+    background: url('../images/vip_card_4.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .cardBox .card li.vip5 {
+    background: url('../images/vip_card_5.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .cardBox .card li.vip6 {
+    background: url('../images/vip_card_6.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .cardBox .card li.vip7 {
+    background: url('../images/vip_card_7.png') no-repeat;
     background-size: 100%;
 }
 .vipDetail .finger {
@@ -267,15 +568,15 @@ footer .list_ic {
     background-size: contain;
 }
 .jumpWindow .title i {
-    background: url('../images/icon/svg/close.svg') no-repeat;
+    background: url('../images/icon/svg/jumpWindow_close.svg') no-repeat;
     background-size: contain;
 }
 .jumpWindow .eye {
-    background: url('../images/icon/svg/eye.svg') no-repeat;
+    background: url('../images/icon/svg/jumpWindow_eye.svg') no-repeat;
     background-size: 100%;
 }
 .jumpWindow.loading .img {
-    background: url('../images/icon/svg/loading_b.svg') no-repeat;
+    background: url('../images/icon/svg/jumpWindow_loading.svg') no-repeat;
     background-size: 100%;
 }
 

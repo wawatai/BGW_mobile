@@ -35,7 +35,7 @@
 
         i {
             width: 26px;
-            height: 16px;
+            height: 26px;
             flex-shrink: 0;
             margin: 0 5px 0 15px;
         }
@@ -240,31 +240,27 @@
             &:active,&.active {
 
                 i {
-                    background-position-y: 100%;
+                    
+                    &::before {
+                        left: -24px;
+                    }
                 }
             }
 
             i {
-                width: 7.5vw;
-                height: 7.5vw;
+                width: 24px;
+                height: 24px;
+                position: relative;
+                overflow: hidden;
 
-                &.sport {
-                    background-position-x: 0;
-                }
-                &.live {
-                    background-position-x: 20%;
-                }
-                &.slot {
-                    background-position-x: 40%;
-                }
-                &.fish {
-                    background-position-x: 60%;
-                }
-                &.lottery {
-                    background-position-x: 80%;
-                }
-                &.board {
-                    background-position-x: 100%;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    filter: drop-shadow(24px 0 0 #101010);
                 }
             }
         }

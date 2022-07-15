@@ -100,7 +100,10 @@
                 &:active,&.active {
 
                     i {
-                        background-position-y: 100%;
+
+                        &::before {
+                            top: -28px;
+                        }
                     }
 
                     .text {
@@ -112,14 +115,19 @@
                 }
 
                 i {
-                    width: 8.8vw;
-                    height: 8.8vw;
-
-                    &.wallet {
-                        background-position-x: 0;
-                    }
-                    &.vip {
-                        background-position-x: 100%;
+                    width: 28px;
+                    height: 28px;
+                    position: relative;
+                    overflow: hidden;
+    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        filter: drop-shadow(0 28px 0 #101010);
                     }
                 }
 
@@ -160,21 +168,8 @@
 
                 i {
                     display: block;
-                    width: 9.4vw;
-                    height: 8.33vw;
-
-                    &.bettingRecord {
-                        background-position-x: 0;
-                    }
-                    &.dealRecord {
-                        background-position-x: 25%;
-                    }
-                    &.mail {
-                        background-position-x: 50%;
-                    }
-                    &.card {
-                        background-position-x: 75%;
-                    }
+                    width: 8vw;
+                    height: 8vw;
                 }
 
                 p {
@@ -212,39 +207,33 @@
 
         &:active,&.active {
 
-            i {
+            .option_ic {
+
+                &::before {
+                    left: -18px;
+                }
+            }
+
+            .arrow_ic {
                 background-position-y: 100%;
             }
         }
 
         .option_ic {
-            width: 5vw;
-            height: 5vw;
+            width: 18px;
+            height: 18px;
             margin-right: 2vw;
+            position: relative;
+            overflow: hidden;
 
-            &.invite {
-                background-position-x: 0;
-            }
-            &.point {
-                background-position-x: 12.5%;
-            }
-            &.eventApply {
-                background-position-x: 25%;
-            }
-            &.help {
-                background-position-x: 37.5%;
-            }
-            &.about {
-                background-position-x: 50%;
-            }
-            &.app {
-                background-position-x: 62.5%;
-            }
-            &.lang {
-                background-position-x: 75%;
-            }
-            &.logout {
-                background-position-x: 87.5%;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                filter: drop-shadow(18px 0 0 #101010);
             }
         }
 
