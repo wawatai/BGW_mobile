@@ -4564,10 +4564,11 @@ html body .applyList .listBox .list .title p {
 html body .applyList .listBox .list ul {
   width: 100%;
   height: auto;
+  padding-top: 16px;
 }
 html body .applyList .listBox .list ul li {
   width: 100%;
-  height: 28px;
+  height: auto;
   color: #d3ae6d;
   font-size: 3.4vw;
   font-weight: bold;
@@ -4580,10 +4581,12 @@ html body .applyList .listBox .list ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
   padding: 0 16px;
 }
 html body .applyList .listBox .list ul li.cur {
   background: #373737;
+  padding: 8px 16px;
 }
 html body .applyList .listBox .list ul li .num {
   color: #ffffff;
@@ -4901,7 +4904,7 @@ html body .applyList .recordList .recordBox ul li {
   width: 100%;
   height: auto;
   color: #d3ae6d;
-  font-size: 3.7vw;
+  font-size: 3.4vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6399,7 +6402,7 @@ html body .bettingWrap .list .recordBox ul li {
   width: 100%;
   height: auto;
   color: #d3ae6d;
-  font-size: 3.7vw;
+  font-size: 3.4vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
