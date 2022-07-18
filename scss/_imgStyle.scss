@@ -438,17 +438,16 @@ footer .list_ic.event::before {
     background: url('../images/icon/svg/helpBody_app_q3.svg') no-repeat;
     background-size: contain;
 }
-.helpInner .img.deposit_water {
-    background: url('../images/help/online01.png') no-repeat;
+.helpInner .img.depositWay {
+    background: url('../images/help/deposit.jpg') no-repeat;
     background-size: 100%;
 }
-.helpInner .img.depositWay,
 .helpInner .img.withdrawalWay {
-    background: url('../images/help/withdraw.png') no-repeat;
+    background: url('../images/help/withdrawal.jpg') no-repeat;
     background-size: 100%;
 }
 .helpInner .img.transferWay {
-    background: url('../images/help/transfer.png') no-repeat;
+    background: url('../images/help/transfer.jpg') no-repeat;
     background-size: 100%;
 }
 .helpInner .img.tv {

@@ -516,19 +516,18 @@ footer .list_ic.event::before {
   background-size: contain;
 }
 
-.helpInner .img.deposit_water {
-  background: url("../images/help/online01.png") no-repeat;
+.helpInner .img.depositWay {
+  background: url("../images/help/deposit.jpg") no-repeat;
   background-size: 100%;
 }
 
-.helpInner .img.depositWay,
 .helpInner .img.withdrawalWay {
-  background: url("../images/help/withdraw.png") no-repeat;
+  background: url("../images/help/withdrawal.jpg") no-repeat;
   background-size: 100%;
 }
 
 .helpInner .img.transferWay {
-  background: url("../images/help/transfer.png") no-repeat;
+  background: url("../images/help/transfer.jpg") no-repeat;
   background-size: 100%;
 }
 
@@ -4321,17 +4320,25 @@ html body .helpInner ul li .textBox p a {
 html body .helpInner ul li .textBox .img {
   width: 100%;
   height: 0;
-  padding-top: 87%;
   margin: 10px 0;
 }
+html body .helpInner ul li .textBox .img.depositWay {
+  padding-top: 182%;
+}
+html body .helpInner ul li .textBox .img.withdrawalWay {
+  padding-top: 147%;
+}
 html body .helpInner ul li .textBox .img.transferWay {
-  padding-top: 111%;
+  padding-top: 190%;
 }
 html body .helpInner ul li .textBox .img.remote {
   padding-top: 137%;
 }
 html body .helpInner ul li .textBox .img.license {
   padding-top: 134%;
+}
+html body .helpInner ul li .textBox .img.tv {
+  padding-top: 87%;
 }
 html body .helpInner ul li .textBox .img.dg_1 {
   padding-top: 70%;
