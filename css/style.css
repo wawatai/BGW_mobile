@@ -843,6 +843,7 @@ html body main {
   padding: 45px 0 60px;
 }
 html body main.index {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1145,7 +1146,7 @@ html body .marqueeBox button {
       flex-shrink: 0;
   font-size: 3.7vw;
   padding: 0 10px 2px;
-  border-radius: 0;
+  border-radius: 0 30px 30px 0;
 }
 html body .marqueeBox button:active, html body .marqueeBox button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
@@ -1324,7 +1325,7 @@ html body .memberArea .operate button p {
 }
 html body .homeCenter {
   width: 94%;
-  height: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1333,22 +1334,23 @@ html body .homeCenter {
           justify-content: space-between;
   overflow: hidden;
   margin: 10px auto 0;
+  padding-bottom: 10px;
 }
 html body .homeCenter .gameList {
   width: 26vw;
-  height: 100%;
+  height: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 10px 0;
+  align-self: flex-start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding-bottom: 10px;
 }
 html body .homeCenter .gameList li {
   width: 100%;
-  height: auto;
+  height: 60px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #252525), color-stop(93%, #383838));
   background: linear-gradient(to top, #252525 8%, #383838 93%);
   border: solid 1px #b09365;
@@ -1395,16 +1397,14 @@ html body .homeCenter .gameList li i::before {
 }
 html body .homeCenter .gameBox {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: none;
   -ms-grid-columns: 1fr 5px 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  overflow-y: auto;
   margin-left: 10px;
-  padding-bottom: 10px;
 }
 html body .homeCenter .gameBox.display {
   display: -ms-grid;
