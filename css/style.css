@@ -3392,7 +3392,7 @@ html body .walletWrap .walletList .title {
 }
 html body .walletWrap .walletList .title button {
   width: auto;
-  height: 6vw;
+  height: 8vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   color: #101010;
@@ -3400,7 +3400,8 @@ html body .walletWrap .walletList .title button {
   font-weight: bold;
   border-radius: 5px;
   padding: 0 10px;
-  font-size: 2vw;
+  padding: 0 20px;
+  font-size: 3.6vw;
 }
 html body .walletWrap .walletList .title button:active, html body .walletWrap .walletList .title button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
@@ -7069,7 +7070,7 @@ html body .transWrap .wallet .title p i {
 }
 html body .transWrap .wallet .title button {
   width: auto;
-  height: 26px;
+  height: 8vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   color: #101010;
@@ -7077,7 +7078,8 @@ html body .transWrap .wallet .title button {
   font-weight: bold;
   border-radius: 5px;
   padding: 0 10px;
-  font-size: 2vw;
+  padding: 0 20px;
+  font-size: 3.6vw;
 }
 html body .transWrap .wallet .title button:active, html body .transWrap .wallet .title button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
@@ -7199,7 +7201,7 @@ html body .transWrap .walletList .title {
 }
 html body .transWrap .walletList .title button {
   width: auto;
-  height: 6vw;
+  height: 8vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   color: #101010;
@@ -7207,7 +7209,8 @@ html body .transWrap .walletList .title button {
   font-weight: bold;
   border-radius: 5px;
   padding: 0 10px;
-  font-size: 2vw;
+  padding: 0 20px;
+  font-size: 3.6vw;
 }
 html body .transWrap .walletList .title button:active, html body .transWrap .walletList .title button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
