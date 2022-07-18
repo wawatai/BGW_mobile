@@ -409,14 +409,14 @@
         .content {
             width: 100%;
             height: auto;
-            padding: 16px;
+            padding: 5px 16px;
 
             li {
                 width: 100%;
                 height: auto;
                 display: flex;
                 align-items: center;
-                margin-bottom: 10px;
+                margin-bottom: 2px;
 
                 &:last-child {
                     margin: 0;
@@ -446,7 +446,7 @@
 
                     button {
                         width: auto;
-                        height: 28px;
+                        height: 25px;
                         @include secondBtn;
                         font-size: 2vw;
                         flex-shrink: 0;

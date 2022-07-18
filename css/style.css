@@ -4105,7 +4105,7 @@ html body .memberPlatform .platformBox .title p {
 html body .memberPlatform .platformBox .content {
   width: 100%;
   height: auto;
-  padding: 16px;
+  padding: 5px 16px;
 }
 html body .memberPlatform .platformBox .content li {
   width: 100%;
@@ -4116,7 +4116,7 @@ html body .memberPlatform .platformBox .content li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 html body .memberPlatform .platformBox .content li:last-child {
   margin: 0;
@@ -4152,7 +4152,7 @@ html body .memberPlatform .platformBox .content li p span {
 }
 html body .memberPlatform .platformBox .content li p button {
   width: auto;
-  height: 28px;
+  height: 25px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #252525), color-stop(93%, #383838));
   background: linear-gradient(to top, #252525 8%, #383838 93%);
   border: solid 1px #b09365;
