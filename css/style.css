@@ -4105,22 +4105,26 @@ html body .memberPlatform .platformBox .title p {
 html body .memberPlatform .platformBox .content {
   width: 100%;
   height: auto;
-  padding: 0 16px;
+  padding: 16px;
 }
 html body .memberPlatform .platformBox .content li {
   width: 100%;
-  height: 38px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
+}
+html body .memberPlatform .platformBox .content li:last-child {
+  margin: 0;
 }
 html body .memberPlatform .platformBox .content li p {
   width: 100%;
   color: #d3ae6d;
-  font-size: 14px;
+  font-size: 3.4vw;
   font-weight: bold;
 }
 html body .memberPlatform .platformBox .content li p:first-child {
@@ -4396,7 +4400,7 @@ html body .helpInner ul li .textBox p {
   line-height: 4vw;
   font-size: 3.4vw;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
 }
 html body .helpInner ul li .textBox p:last-child {
   margin: 0;
@@ -4404,7 +4408,7 @@ html body .helpInner ul li .textBox p:last-child {
 html body .helpInner ul li .textBox p.smallTitle {
   color: #ffe4b5;
   font-size: 5vw;
-  margin: 20px 0 10px;
+  margin: 20px 0 15px;
 }
 html body .helpInner ul li .textBox p.smallTitle:first-child {
   margin-top: 0;
@@ -6618,7 +6622,7 @@ html body .waterBox ul li .content {
 }
 html body .waterBox ul li .content .row {
   width: 100%;
-  height: 38px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6628,6 +6632,10 @@ html body .waterBox ul li .content .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
+}
+html body .waterBox ul li .content .row:nth-of-type(1) {
+  margin-top: 10px;
 }
 html body .waterBox ul li .content .row .smallTitle {
   color: #d3ae6d;
