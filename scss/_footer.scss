@@ -31,30 +31,11 @@ footer {
                 p {
                     color: $footer_Active;
                 }
-
-                i {
-                    
-                    &::before {
-                        top: -24px;
-                    }
-                }
             }
 
             i {
                 width: 24px;
                 height: 24px;
-                position: relative;
-                overflow: hidden;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    left: 0;
-                    top: 0;
-                    filter: drop-shadow(0 24px 0 #efcc8e);
-                }
             }
 
             p {
