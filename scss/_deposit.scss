@@ -44,7 +44,7 @@
                         i {
                             
                             &::before {
-                                top: -32px;
+                                left: -32px;
                             }
                         }
                     }
@@ -62,7 +62,7 @@
                             height: 100%;
                             left: 0;
                             top: 0;
-                            filter: drop-shadow(0 32px 0 #101010);
+                            filter: drop-shadow(32px 0 0 #101010);
                         }
                     }
 
@@ -79,7 +79,7 @@
         @include bgStyle_1;
         display: none;
         height: calc(100vh - 270px);
-        padding: 0 16px;
+        padding: 0 16px 10px;
         
         &.display {
             display: block;

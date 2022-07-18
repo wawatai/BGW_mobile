@@ -267,16 +267,9 @@
                         }
                     }
 
-                    &.platform {
-                        color: $money;
-                        font-size: 4vw;
-                        margin: 15px 0;
-                        text-align: center;
-
-                        .downloadBtn {
-                            width: 144px;
-                            margin-left: 10px;
-                        }
+                    &.sub {
+                        color: $mainWord_2;
+                        margin: 16px 0;
                     }
 
                     a {
@@ -292,12 +285,15 @@
 
                     &.depositWay {
                         padding-top: 182%;
+                        border: solid 1px $mainBorder_1;
                     }
                     &.withdrawalWay {
                         padding-top: 147%;
+                        border: solid 1px $mainBorder_1;
                     }
                     &.transferWay {
                         padding-top: 190%;
+                        border: solid 1px $mainBorder_1;
                     }
                     &.remote {
                         padding-top: 137%;

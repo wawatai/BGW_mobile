@@ -97,20 +97,20 @@
                             width: 70px;
                             height: 27px;
                             
-                            &:first-child {
-                                @include secondBtn;
-                                font-size: 2vw;
-                            }
-
-                            &:last-child {
+                            &.applyBtn {
                                 display: none;
-                                margin-left: 5px;
                                 @include mainBtn;
                                 font-size: 2vw;
 
                                 &.display {
                                     display: block;
                                 }
+                            }
+
+                            &.checkBtn {
+                                @include secondBtn;
+                                margin-left: 5px;
+                                font-size: 2vw;
                             }
                         }
                     }
@@ -127,7 +127,7 @@
     .eventImg {
         width: 100%;
         height: auto;
-        padding: 16px;
+        margin-bottom: 16px;
     }
 
     .detailContent {

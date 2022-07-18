@@ -2930,25 +2930,8 @@ html body .eventList ul li .eventBox .textBox div button {
   width: 70px;
   height: 27px;
 }
-html body .eventList ul li .eventBox .textBox div button:first-child {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #252525), color-stop(93%, #383838));
-  background: linear-gradient(to top, #252525 8%, #383838 93%);
-  border: solid 1px #b09365;
-  color: #d3ae6d;
-  font-size: 4vw;
-  font-weight: bold;
-  border-radius: 5px;
-  padding: 0 10px 2px;
-  font-size: 2vw;
-}
-html body .eventList ul li .eventBox .textBox div button:first-child:active, html body .eventList ul li .eventBox .textBox div button:first-child.active {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
-  color: #101010;
-}
-html body .eventList ul li .eventBox .textBox div button:last-child {
+html body .eventList ul li .eventBox .textBox div button.applyBtn {
   display: none;
-  margin-left: 5px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   color: #101010;
@@ -2958,12 +2941,29 @@ html body .eventList ul li .eventBox .textBox div button:last-child {
   padding: 0 10px;
   font-size: 2vw;
 }
-html body .eventList ul li .eventBox .textBox div button:last-child:active, html body .eventList ul li .eventBox .textBox div button:last-child.active {
+html body .eventList ul li .eventBox .textBox div button.applyBtn:active, html body .eventList ul li .eventBox .textBox div button.applyBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
-html body .eventList ul li .eventBox .textBox div button:last-child.display {
+html body .eventList ul li .eventBox .textBox div button.applyBtn.display {
   display: block;
+}
+html body .eventList ul li .eventBox .textBox div button.checkBtn {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #252525), color-stop(93%, #383838));
+  background: linear-gradient(to top, #252525 8%, #383838 93%);
+  border: solid 1px #b09365;
+  color: #d3ae6d;
+  font-size: 4vw;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0 10px 2px;
+  margin-left: 5px;
+  font-size: 2vw;
+}
+html body .eventList ul li .eventBox .textBox div button.checkBtn:active, html body .eventList ul li .eventBox .textBox div button.checkBtn.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+  color: #101010;
 }
 html body .eventDetail {
   width: 100%;
@@ -2974,7 +2974,7 @@ html body .eventDetail {
 html body .eventDetail .eventImg {
   width: 100%;
   height: auto;
-  padding: 16px;
+  margin-bottom: 16px;
 }
 html body .eventDetail .detailContent {
   width: 100%;
@@ -4303,15 +4303,9 @@ html body .helpInner ul li .textBox p.smallTitle {
 html body .helpInner ul li .textBox p.smallTitle:first-child {
   margin-top: 0;
 }
-html body .helpInner ul li .textBox p.platform {
-  color: #ffffff;
-  font-size: 4vw;
-  margin: 15px 0;
-  text-align: center;
-}
-html body .helpInner ul li .textBox p.platform .downloadBtn {
-  width: 144px;
-  margin-left: 10px;
+html body .helpInner ul li .textBox p.sub {
+  color: #9a9a9a;
+  margin: 16px 0;
 }
 html body .helpInner ul li .textBox p a {
   color: #ffffff;
@@ -4324,12 +4318,15 @@ html body .helpInner ul li .textBox .img {
 }
 html body .helpInner ul li .textBox .img.depositWay {
   padding-top: 182%;
+  border: solid 1px #bf9e67;
 }
 html body .helpInner ul li .textBox .img.withdrawalWay {
   padding-top: 147%;
+  border: solid 1px #bf9e67;
 }
 html body .helpInner ul li .textBox .img.transferWay {
   padding-top: 190%;
+  border: solid 1px #bf9e67;
 }
 html body .helpInner ul li .textBox .img.remote {
   padding-top: 137%;
@@ -6684,7 +6681,7 @@ html body .depositWrap .depList .listWrap ul li:active::after, html body .deposi
   height: 2.5vw;
 }
 html body .depositWrap .depList .listWrap ul li:active i::before, html body .depositWrap .depList .listWrap ul li.active i::before {
-  top: -32px;
+  left: -32px;
 }
 html body .depositWrap .depList .listWrap ul li i {
   width: 32px;
@@ -6699,8 +6696,8 @@ html body .depositWrap .depList .listWrap ul li i::before {
   height: 100%;
   left: 0;
   top: 0;
-  -webkit-filter: drop-shadow(0 32px 0 #101010);
-          filter: drop-shadow(0 32px 0 #101010);
+  -webkit-filter: drop-shadow(32px 0 0 #101010);
+          filter: drop-shadow(32px 0 0 #101010);
 }
 html body .depositWrap .depList .listWrap ul li p {
   margin-top: 5px;
@@ -6713,7 +6710,7 @@ html body .depositWrap .depContent {
   padding-bottom: 10px;
   display: none;
   height: calc(100vh - 270px);
-  padding: 0 16px;
+  padding: 0 16px 10px;
 }
 html body .depositWrap .depContent.display {
   display: block;
